@@ -724,6 +724,31 @@
     "testimonials": {
       "detail": "Hear from some of our amazing customers who are using rotki.",
       "title": "Don’t just take our word for it"
+    },
+    "otutu_features": {
+      "key_features": "Key Features",
+      "features": {
+        "automated_bookkeeping": {
+          "title": "Automated Bookkeeping",
+          "description": "Automatically categorize and record transactions with AI-powered precision"
+        },
+        "real_time_reporting": {
+          "title": "Real-time Reporting",
+          "description": "Get instant financial insights with live dashboards and reports"
+        },
+        "multi_currency": {
+          "title": "Multi-Currency Support",
+          "description": "Handle transactions in multiple currencies with automatic conversion"
+        },
+        "tax_compliance": {
+          "title": "Tax Compliance",
+          "description": "Stay compliant with automated tax calculations and reporting features"
+        },
+        "audit_trails": {
+          "title": "Complete Audit Trails",
+          "description": "Maintain comprehensive records for regulatory compliance and transparency"
+        }
+      }
     }
   },
   "integration": {
