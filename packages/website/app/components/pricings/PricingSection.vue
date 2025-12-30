@@ -1,8 +1,7 @@
 <script setup lang="ts">
 import PricingPeriodTab from '~/components/pricings/PricingPeriodTab.vue';
 import PricingTierComparison from '~/components/pricings/PricingTierComparison.vue';
-import { useAvailablePlans } from '~/composables/tiers/use-available-plans';
-import { usePremiumTiersInfo } from '~/composables/tiers/use-premium-tiers-info';
+import { useGlobalPricingCache } from '~/composables/use-pricing-cache';
 import { PricingPeriod } from '~/types/tiers';
 
 defineProps<{
@@ -11,8 +10,20 @@ defineProps<{
 
 const selectedPricingPeriod = ref<PricingPeriod>(PricingPeriod.MONTHLY);
 
-const { availablePlans } = useAvailablePlans();
-const { tiersInformation } = usePremiumTiersInfo();
+// Critical optimization: Use global cache instead of heavy composables
+const pricingCache = useGlobalPricingCache();
+const { isDataLoaded } = pricingCache;
+
+// Get data with cache-first strategy
+const availablePlans = computed(() => {
+  const data = pricingCache.getPricingData();
+  return data.availablePlans.tiers;
+});
+
+const tiersInformation = computed(() => {
+  const data = pricingCache.getPricingData();
+  return data.premiumTiersInfo;
+});
 </script>
 
 <template>
@@ -20,15 +31,43 @@ const { tiersInformation } = usePremiumTiersInfo();
     data-cy="pricing-section"
     class="container flex flex-col gap-12 pb-10 md:pb-20"
   >
-    <PricingPeriodTab
-      v-model="selectedPricingPeriod"
-      :data="availablePlans"
-    />
-    <PricingTierComparison
-      :compact="compact"
-      :selected-period="selectedPricingPeriod"
-      :available-plans="availablePlans"
-      :tiers-data="tiersInformation"
-    />
+    <!-- Critical optimization: Wrap in ClientOnly to prevent SSR hydration blocking -->
+    <ClientOnly>
+      <template v-if="isDataLoaded">
+        <PricingPeriodTab
+          v-model="selectedPricingPeriod"
+          :data="availablePlans"
+        />
+        <PricingTierComparison
+          :compact="compact"
+          :selected-period="selectedPricingPeriod"
+          :available-plans="availablePlans"
+          :tiers-data="tiersInformation"
+        />
+      </template>
+
+      <!-- Loading skeleton for immediate feedback -->
+      <template #fallback>
+        <div class="flex flex-col gap-8">
+          <!-- Pricing period tab skeleton -->
+          <div class="flex gap-2 justify-center">
+            <div class="h-10 w-24 bg-gray-200 rounded animate-pulse" />
+            <div class="h-10 w-24 bg-gray-200 rounded animate-pulse" />
+          </div>
+
+          <!-- Pricing table skeleton -->
+          <div class="space-y-4">
+            <div class="h-16 bg-gray-200 rounded animate-pulse" />
+            <div class="grid grid-cols-4 gap-4">
+              <div
+                v-for="i in 4"
+                :key="i"
+                class="h-32 bg-gray-200 rounded animate-pulse"
+              />
+            </div>
+          </div>
+        </div>
+      </template>
+    </ClientOnly>
   </div>
 </template>

@@ -298,6 +298,13 @@ export default defineNuxtConfig({
     },
     // Redirect /pricing to /checkout/pay
     '/pricing': { redirect: { to: '/checkout/pay', statusCode: 301 } },
+    // Critical optimization: Disable SSR for checkout routes to prevent hydration issues
+    '/checkout/**': {
+      ssr: false, // Force client-side rendering for checkout routes
+      headers: {
+        'Cache-Control': 'no-cache, no-store, must-revalidate',
+      },
+    },
     // Global no-cache rule for HTML to prevent CSP nonce mismatches
     ...(process.env.NODE_ENV !== 'development'
       ? {
@@ -323,7 +330,7 @@ export default defineNuxtConfig({
       },
     },
     '/checkout/pay': {
-      prerender: true,
+      // Removed prerender to prevent SSR hydration issues
       security: {
         headers: {
           contentSecurityPolicy: mergeCSP(
@@ -471,6 +478,7 @@ export default defineNuxtConfig({
       },
       sponsorshipEnabled: false,
       testing: false,
+      useStaticPricing: false,
       walletConnect: {
         projectId: '',
       },

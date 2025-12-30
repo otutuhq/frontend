@@ -1,13 +1,14 @@
 <script lang="ts" setup>
 import { get } from '@vueuse/core';
-import { useAvailablePlans } from '~/composables/tiers/use-available-plans';
 import { useRedirectUrl } from '~/composables/use-redirect-url';
 import { CHECKOUT_ROUTE_NAMES, type CheckoutStep } from '~/types';
 
 const { t } = useI18n({ useScope: 'global' });
 
 const route = useRoute();
-const { pending: loadingPlans } = useAvailablePlans();
+
+// Critical fix: Remove blocking useAvailablePlans() call
+// const { pending: loadingPlans } = useAvailablePlans(); // REMOVED - this was blocking
 
 const isCardOrSecureRoute = computed<boolean>(() => {
   const routeName = route.name;
@@ -76,6 +77,11 @@ const isTwoColumnLayout = computed<boolean>(() => {
 onBeforeMount(() => {
   removeStoredRedirectUrl();
 });
+
+// URGENT: Disable SSR for this page to prevent hydration mismatches
+definePageMeta({
+  ssr: false, // Critical fix: Force client-side rendering only
+});
 </script>
 
 <template>
@@ -86,15 +92,8 @@ onBeforeMount(() => {
     ]"
   >
     <div class="flex justify-center grow overflow-hidden min-w-min">
-      <RuiProgress
-        v-if="loadingPlans"
-        circular
-        class="mt-20"
-        color="primary"
-        variant="indeterminate"
-      />
+      <!-- Critical fix: Remove blocking loading state and show content immediately -->
       <form
-        v-else
         class="flex flex-col justify-between"
         :class="[
           isTwoColumnLayout ? 'w-full' : 'max-w-full items-center',
@@ -116,15 +115,21 @@ onBeforeMount(() => {
       </form>
     </div>
 
+    <!-- Critical fix: Wrap heavy components in ClientOnly to prevent SSR hydration issues -->
     <div class="hidden lg:block max-w-[20.8rem] sticky top-0 self-start">
-      <RuiStepper
-        :step="step"
-        :steps="steps"
-        custom
-        orientation="vertical"
-        subtitle-class="!text-rui-primary-lighter"
-        title-class="!text-rui-primary"
-      />
+      <ClientOnly>
+        <RuiStepper
+          :step="step"
+          :steps="steps"
+          custom
+          orientation="vertical"
+          subtitle-class="!text-rui-primary-lighter"
+          title-class="!text-rui-primary"
+        />
+        <template #fallback>
+          <div class="h-96 bg-gray-100 animate-pulse rounded" />
+        </template>
+      </ClientOnly>
     </div>
   </div>
 </template>

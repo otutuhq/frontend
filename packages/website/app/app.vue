@@ -1,8 +1,15 @@
 <script setup lang="ts">
+import { useGlobalPricingCache } from '~/composables/use-pricing-cache';
 import { useStagingBranding } from '~/composables/use-staging-branding';
 import { commonAttrs } from '~/utils/metadata';
 
 useStagingBranding();
+
+// Preload pricing data early for optimal performance
+const pricingCache = useGlobalPricingCache();
+onMounted(() => {
+  pricingCache.preloadData();
+});
 
 const { public: { baseUrl } } = useRuntimeConfig();
 

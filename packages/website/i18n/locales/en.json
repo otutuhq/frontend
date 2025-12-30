@@ -491,31 +491,35 @@
     },
     "advantages": {
       "local_app": {
-        "description": "rotki is a local-first application with a strong focus on user privacy.",
-        "title": "Self-hosted app"
+        "description": "Record and manage transactions in multiple currencies with automatic conversion and up-to-date exchange rates.",
+        "title": "Multi-Currency"
       },
       "open_source": {
-        "description": "rotki's source code is available to inspect, modify and enhance.",
-        "title": "Open source"
+        "description": "Securely manage multiple companies with full data isolation, built for accountants, agencies, and growing businesses.",
+        "title": "Multi-Tenancy Architecture"
       },
       "own_your_data": {
-        "description": "Your financial data is kept encrypted in your system and not shared with third parties.",
-        "title": "Own your data"
+        "description": "Enterprise-grade double-entry accrual accounting with automatic journal entries to keep your books accurate and balanced.",
+        "title": "Double-Entry Accounting"
+      },
+      "secure_platform": {
+        "description": "Generate essential reports including Profit & Loss, Balance Sheet, and Cash Flow for better financial decisions.",
+        "title": "Financial Reports"
       }
     },
     "dashboard": {
       "details": {
         "asset_and_liabilities": {
-          "description": "View all of your assets and liabilities and your exposure to each as a percentage of your net worth.",
-          "title": "Assets and Liabilities"
+          "description": "Easily create and manage products and services with flexible categorization and intuitive selection. Configure offerings for both sales and purchases, with automatic account mapping to ensure income and expenses are always recorded correctly.",
+          "title": "Smart Product & Service Setup"
         },
         "net_worth_over_time": {
-          "description": "Users can also see a graph of how their total net worth is evolving over time. Free users are limited to the last 2 weeks.",
-          "title": "Net worth over time"
+          "description": "Reduce manual errors with built-in tax, discount, and validation logic. Otutu automatically applies the correct adjustments while keeping you in control with alerts and bulk management tools.",
+          "title": "Automated Pricing, Tax & Control"
         }
       },
-      "subtitle": "A 360° overview of your assets",
-      "title": "Dashboard"
+      "subtitle": "Comprehensive offerings management system that supports both products and services with flexible configurations for sellable and purchasable items.",
+      "title": "Offerings"
     },
     "history_events": {
       "subtitle": "View all historical events including, transactions, trades, deposits, withdrawals and more.",
@@ -572,13 +576,13 @@
       }
     },
     "exchanges": {
-      "detail": "Connect to a big number of centralized exchanges and inspect current balances, historical trades, deposits and withdrawals.",
-      "subtitle": "Connect to a big number of centralized exchanges",
-      "title": "Exchanges"
+      "detail": "Record all transaction types with automatic double-entry journals and full audit trails. Manage a structured chart of accounts with accurate balance tracking and clear categorization. Generate professional financial statements and in-depth analytical reports with confidence.",
+      "subtitle": "Comprehensive accounting system with detailed transaction management, financial reporting, and complete audit trails for regulatory compliance.",
+      "title": "Accounting"
     },
     "hero": {
-      "motto": "rotki is an open source, self-hosted portfolio manager, accounting and analytics tool that protects your privacy.",
-      "title": "Take control of your portfolio with unmatched privacy"
+      "motto": "A powerful modern accounting platform with full double-entry accrual accounting, built for professional financial management.",
+      "title": "A Modern Accounting Platform"
     },
     "plans": {
       "cannot_continue": "You cannot continue because you have an active subscription. Click here to",
@@ -788,7 +792,7 @@
     "pricing": "Pricing",
     "product": "Product",
     "resources": "Resources",
-    "rotki_premium": "rotki Premium",
+    "rotki_premium": "Otutu Premium",
     "product_and_services": "Product & Services",
     "sponsor": "Sponsor rotki's next release",
     "tos": "Terms of Service",

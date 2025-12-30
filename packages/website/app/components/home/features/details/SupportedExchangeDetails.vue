@@ -1,11 +1,7 @@
 <script setup lang="ts">
-import { get } from '@vueuse/core';
-import { useIntegrationsData } from '~/composables/use-integrations-data';
+import OtutuFeatures from './OtutuFeatures.vue';
 
 const { t } = useI18n({ useScope: 'global' });
-const { data: integrationData } = useIntegrationsData();
-
-const exchangesWithKeys = computed(() => get(integrationData).exchanges.filter(item => item.isExchangeWithKey));
 </script>
 
 <template>
@@ -20,6 +16,8 @@ const exchangesWithKeys = computed(() => get(integrationData).exchanges.filter(i
       <div class="text-body-1 text-rui-text-secondary pt-2">
         {{ t('home.exchanges.detail') }}
       </div>
+      <!-- Exchange logos and names commented out -->
+      <!--
       <div class="pt-4">
         <div
           class="grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-2 xl:grid-cols-3 gap-4"
@@ -43,6 +41,8 @@ const exchangesWithKeys = computed(() => get(integrationData).exchanges.filter(i
           </div>
         </div>
       </div>
+      -->
+      <OtutuFeatures />
     </div>
 
     <div class="flex-1">
