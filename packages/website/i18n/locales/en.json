@@ -683,28 +683,28 @@
     "premium_features": {
       "features": {
         "dex_support": {
-          "detail": "See how much you have in each liquidity pool. All your LP join/exit events are shown along with the total profit/loss per pool.\n\nDEX trades are taken into account in the tax report for premium users.",
-          "title": "Decentralized exchanges"
+          "detail": "Otutu is built with accountability at its core. Every transaction, adjustment, reconciliation, and payment is recorded with a complete audit trail, including timestamps and user activity tracking. From invoices and bills to bank reconciliations and journal entries, Otutu ensures your records are always review-ready—whether for internal reviews, external audits, or regulatory compliance.",
+          "title": "Audit-Ready by Design"
         },
         "graphs_and_statistics": {
-          "detail": "Premium users can visit the graphs/statistics page and get graphs for:\nNet worth over time\nAsset amount and total asset value over time\nBreakdown of total net worth per location\nBreakdown of total net worth per asset",
-          "title": "Graphs and statistics"
+          "detail": "Otutu goes beyond basic summaries. It delivers professional financial statements and analytical reports that help you understand not just what happened, but why it happened. Generate balance sheets, income statements, trial balances, receivables aging, payables aging, and detailed account activity reports with confidence. Sales and purchase dashboards provide insights into cash flow, payment performance, outstanding balances, and financial trends—so decisions are driven by data, not assumptions.",
+          "title": "Advanced Reporting for Real Business Decisions"
         },
         "history": {
-          "detail": "Free users have a limit on the number of transactions, deposits, withdrawals and other events they can see and process. Premium users have higher limits.",
-          "title": "Higher limits for trades, transactions, deposits and withdrawals"
+          "detail": "Otutu is built for businesses that operate beyond a single currency or market. With native multi-currency support across sales, purchases, banking, and accounting, Otutu automatically handles currency conversions, exchange rate tracking, and accurate reporting. Whether you invoice international clients, pay foreign vendors, or manage multiple bank accounts, Otutu keeps your financials consistent and transparent.",
+          "title": "Designed for Global and Multi-Currency Operations"
         },
         "premium_defi": {
-          "detail": "See the entire list of activities you have done when interacting with a DeFi protocol. Get the profit/loss report for each protocol. Set watchers for various protocols to be informed via email when certain conditions are met.",
-          "title": "DeFi historical accounting, profit and loss"
+          "detail": "Otutu automates the repetitive and error-prone parts of accounting so you can focus on running your business. From real-time tax and discount calculations to recurring invoices, automated journal entries, bank feeds, and smart reconciliation, Otutu minimizes manual input while maintaining full control and accuracy. Automation is applied thoughtfully—enhancing productivity without hiding critical financial details.",
+          "title": "Intelligent Automation That Reduces Manual Work"
         },
         "premium_staking": {
-          "detail": "See how much of the token is staked per account.\nWhat is the expected APR.\nHow much of the token you have earned by staking across all accounts.\n\nSee a list of all your staking events with links to the corresponding transactions.",
-          "title": "Advanced staking"
+          "detail": "Otutu is designed around enterprise-grade double-entry accrual accounting, the same accounting foundation used by professional firms and regulated businesses worldwide. Every transaction automatically generates balanced journal entries, ensuring accuracy, consistency, and compliance from day one. With a structured chart of accounts, real-time balance tracking, and strict debit/credit enforcement, your financial records remain clean, auditable, and reliable as your business grows.",
+          "title": "Built on Professional Accounting Standards"
         }
       },
-      "subtitle": "Enjoy all the potential that rotki offers.",
-      "title": "Premium features"
+      "subtitle": "Otutu is built for businesses that take accounting seriously. It is not a lightweight bookkeeping tool, and it is not a bloated enterprise ERP. Otutu sits exactly where modern businesses need it: professional-grade accounting standards, intelligent automation, and clear financial visibility—without unnecessary complexity.",
+      "title": "Why Choose Otutu"
     },
     "profit_loss_report": {
       "details": {
