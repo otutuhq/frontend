@@ -1,1 +1,235 @@
-{ "availablePlans": { "settings": { "country": "DE", "isAuthenticated": false }, "tiers": [{ "isMostPopular": false, "isCustom": false, "monthlyPlan": null, "tierName": "Starter", "yearlyPlan": null }, { "isMostPopular": true, "isCustom": false, "monthlyPlan": { "planId": 1, "price": "25.00" }, "tierName": "Basic", "yearlyPlan": { "planId": 2, "price": "250.00" } }, { "isMostPopular": false, "isCustom": false, "monthlyPlan": { "planId": 3, "price": "45.00" }, "tierName": "Advanced", "yearlyPlan": { "planId": 4, "price": "450.00" } }, { "isMostPopular": false, "isCustom": true, "monthlyPlan": null, "tierName": "Custom", "yearlyPlan": null }] }, "premiumTiersInfo": [{ "description": [{ "label": "Historical events limit", "value": "1K events" }, { "label": "Encrypted data backups", "value": "Store up to 150MB" }, { "label": "Device limit", "value": "Connect and sync up to 2 devices" }, { "label": "Support", "value": "Standard" }, { "label": "Track ETH Staking", "value": "up to 128 ETH" }, { "label": "Detailed graphs", "value": "Staking Insights" }, { "label": "Event analysis", "value": false }], "limits": { "historical_events_limit": 1000, "encrypted_data_backups": 150, "device_limit": 2, "support_level": 1, "eth_staking_limit": 128, "detailed_graphs": true, "event_analysis": false }, "monthlyPlan": null, "name": "Starter", "yearlyPlan": null }, { "description": [{ "label": "Historical events limit", "value": "30K events" }, { "label": "Encrypted data backups", "value": "Store up to 600MB" }, { "label": "Device limit", "value": "Connect and sync up to 4 devices" }, { "label": "Support", "value": "Standard" }, { "label": "Track ETH Staking", "value": "up to 384 ETH" }, { "label": "Detailed graphs", "value": "Staking Insights" }, { "label": "Event analysis", "value": true }], "limits": { "historical_events_limit": 30000, "encrypted_data_backups": 600, "device_limit": 4, "support_level": 1, "eth_staking_limit": 384, "detailed_graphs": true, "event_analysis": true }, "monthlyPlan": { "id": 1, "price": "25.00" }, "name": "Basic", "yearlyPlan": { "id": 2, "price": "250.00" } }, { "description": [{ "label": "Historical events limit", "value": "100K events" }, { "label": "Encrypted data backups", "value": "Negotiable" }, { "label": "Device limit", "value": "Negotiable" }, { "label": "Support", "value": "Bespoke & Customization assistance" }, { "label": "Track ETH Staking", "value": "Negotiable" }, { "label": "Detailed graphs", "value": "Staking Insights" }, { "label": "Event analysis", "value": true }], "limits": { "historical_events_limit": 100000, "encrypted_data_backups": -1, "device_limit": -1, "support_level": 2, "eth_staking_limit": -1, "detailed_graphs": true, "event_analysis": true }, "monthlyPlan": { "id": 3, "price": "45.00" }, "name": "Advanced", "yearlyPlan": { "id": 4, "price": "450.00" } }, { "description": [{ "label": "Historical events limit", "value": "Negotiable" }, { "label": "Encrypted data backups", "value": "Negotiable" }, { "label": "Device limit", "value": "Negotiable" }, { "label": "Support", "value": "Bespoke & Customization assistance" }, { "label": "Track ETH Staking", "value": "Negotiable" }, { "label": "Detailed graphs", "value": "Staking Insights" }, { "label": "Event analysis", "value": true }], "limits": { "historical_events_limit": -1, "encrypted_data_backups": -1, "device_limit": -1, "support_level": 2, "eth_staking_limit": -1, "detailed_graphs": true, "event_analysis": true }, "monthlyPlan": null, "name": "Custom", "yearlyPlan": null }], "priceBreakdowns": { "1": { "planId": 1, "vatRate": "0.19", "billingFrequencyMonths": 1, "priceBreakdown": { "finalPrice": "25.00", "basePrice": "21.01", "vatAmount": "3.99" }, "country": "DE" }, "2": { "planId": 2, "vatRate": "0.19", "billingFrequencyMonths": 12, "priceBreakdown": { "finalPrice": "250.00", "basePrice": "210.08", "vatAmount": "39.92" }, "country": "DE" }, "3": { "planId": 3, "vatRate": "0.19", "billingFrequencyMonths": 1, "priceBreakdown": { "finalPrice": "45.00", "basePrice": "37.82", "vatAmount": "7.18" }, "country": "DE" }, "4": { "planId": 4, "vatRate": "0.19", "billingFrequencyMonths": 12, "priceBreakdown": { "finalPrice": "450.00", "basePrice": "378.15", "vatAmount": "71.85" }, "country": "DE" } } }
+{
+  "availablePlans": {
+    "settings": {
+      "country": "DE",
+      "isAuthenticated": false
+    },
+    "tiers": [
+      {
+        "isMostPopular": true,
+        "isCustom": false,
+        "monthlyPlan": {
+          "planId": 1,
+          "price": "25.00"
+        },
+        "tierName": "Basic",
+        "yearlyPlan": {
+          "planId": 2,
+          "price": "250.00"
+        }
+      },
+      {
+        "isMostPopular": false,
+        "isCustom": false,
+        "monthlyPlan": {
+          "planId": 3,
+          "price": "45.00"
+        },
+        "tierName": "Advanced",
+        "yearlyPlan": {
+          "planId": 4,
+          "price": "450.00"
+        }
+      },
+      {
+        "isMostPopular": false,
+        "isCustom": true,
+        "monthlyPlan": null,
+        "tierName": "Custom",
+        "yearlyPlan": null
+      }
+    ]
+  },
+  "premiumTiersInfo": [
+    {
+      "description": [
+        {
+          "label": "Historical events limit",
+          "value": "30K events"
+        },
+        {
+          "label": "Encrypted data backups",
+          "value": "Store up to 600MB"
+        },
+        {
+          "label": "Device limit",
+          "value": "Connect and sync up to 4 devices"
+        },
+        {
+          "label": "Support",
+          "value": "Standard"
+        },
+        {
+          "label": "Track ETH Staking",
+          "value": "up to 384 ETH"
+        },
+        {
+          "label": "Detailed graphs",
+          "value": "Staking Insights"
+        },
+        {
+          "label": "Event analysis",
+          "value": true
+        }
+      ],
+      "limits": {
+        "historical_events_limit": 30000,
+        "encrypted_data_backups": 600,
+        "device_limit": 4,
+        "support_level": 1,
+        "eth_staking_limit": 384,
+        "detailed_graphs": true,
+        "event_analysis": true
+      },
+      "monthlyPlan": {
+        "id": 1,
+        "price": "25.00"
+      },
+      "name": "Basic",
+      "yearlyPlan": {
+        "id": 2,
+        "price": "250.00"
+      }
+    },
+    {
+      "description": [
+        {
+          "label": "Historical events limit",
+          "value": "100K events"
+        },
+        {
+          "label": "Encrypted data backups",
+          "value": "Negotiable"
+        },
+        {
+          "label": "Device limit",
+          "value": "Negotiable"
+        },
+        {
+          "label": "Support",
+          "value": "Bespoke & Customization assistance"
+        },
+        {
+          "label": "Track ETH Staking",
+          "value": "Negotiable"
+        },
+        {
+          "label": "Detailed graphs",
+          "value": "Staking Insights"
+        },
+        {
+          "label": "Event analysis",
+          "value": true
+        }
+      ],
+      "limits": {
+        "historical_events_limit": 100000,
+        "encrypted_data_backups": -1,
+        "device_limit": -1,
+        "support_level": 2,
+        "eth_staking_limit": -1,
+        "detailed_graphs": true,
+        "event_analysis": true
+      },
+      "monthlyPlan": {
+        "id": 3,
+        "price": "45.00"
+      },
+      "name": "Advanced",
+      "yearlyPlan": {
+        "id": 4,
+        "price": "450.00"
+      }
+    },
+    {
+      "description": [
+        {
+          "label": "Historical events limit",
+          "value": "Negotiable"
+        },
+        {
+          "label": "Encrypted data backups",
+          "value": "Negotiable"
+        },
+        {
+          "label": "Device limit",
+          "value": "Negotiable"
+        },
+        {
+          "label": "Support",
+          "value": "Bespoke & Customization assistance"
+        },
+        {
+          "label": "Track ETH Staking",
+          "value": "Negotiable"
+        },
+        {
+          "label": "Detailed graphs",
+          "value": "Staking Insights"
+        },
+        {
+          "label": "Event analysis",
+          "value": true
+        }
+      ],
+      "limits": {
+        "historical_events_limit": -1,
+        "encrypted_data_backups": -1,
+        "device_limit": -1,
+        "support_level": 2,
+        "eth_staking_limit": -1,
+        "detailed_graphs": true,
+        "event_analysis": true
+      },
+      "monthlyPlan": null,
+      "name": "Custom",
+      "yearlyPlan": null
+    }
+  ],
+  "priceBreakdowns": {
+    "1": {
+      "planId": 1,
+      "vatRate": "0.19",
+      "billingFrequencyMonths": 1,
+      "priceBreakdown": {
+        "finalPrice": "25.00",
+        "basePrice": "21.01",
+        "vatAmount": "3.99"
+      },
+      "country": "DE"
+    },
+    "2": {
+      "planId": 2,
+      "vatRate": "0.19",
+      "billingFrequencyMonths": 12,
+      "priceBreakdown": {
+        "finalPrice": "250.00",
+        "basePrice": "210.08",
+        "vatAmount": "39.92"
+      },
+      "country": "DE"
+    },
+    "3": {
+      "planId": 3,
+      "vatRate": "0.19",
+      "billingFrequencyMonths": 1,
+      "priceBreakdown": {
+        "finalPrice": "45.00",
+        "basePrice": "37.82",
+        "vatAmount": "7.18"
+      },
+      "country": "DE"
+    },
+    "4": {
+      "planId": 4,
+      "vatRate": "0.19",
+      "billingFrequencyMonths": 12,
+      "priceBreakdown": {
+        "finalPrice": "450.00",
+        "basePrice": "378.15",
+        "vatAmount": "71.85"
+      },
+      "country": "DE"
+    }
+  }
+}

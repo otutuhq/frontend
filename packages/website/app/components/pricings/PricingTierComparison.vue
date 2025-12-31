@@ -4,8 +4,7 @@ import type { FeatureDescriptionMap, FeatureValue, MappedPlan, PlanBase } from '
 import { get, set } from '@vueuse/shared';
 import PricingTable from '~/components/pricings/PricingTable.vue';
 import PricingTabs from '~/components/pricings/PricingTabs.vue';
-import { isCustomPlan, isFreePlan } from '~/components/pricings/utils';
-import { useFreePlanFeatures } from '~/composables/checkout/use-free-plan-features';
+import { isCustomPlan } from '~/components/pricings/utils';
 import { TIER_NAMES } from '~/types/pricing';
 import { type PremiumTiersInfo, PricingPeriod } from '~/types/tiers';
 import { formatCurrency, toTitleCase } from '~/utils/text';
@@ -91,16 +90,6 @@ const regularPlans = computed<PlanBase[]>(() => {
   return plans;
 });
 
-const freePlanFeatures = useFreePlanFeatures();
-const freeTier = computed<PlanBase>(() => ({
-  name: TIER_NAMES.FREE,
-  displayedName: t('pricing.plans.starter_plan'),
-  mainPriceDisplay: t('pricing.free'),
-  type: 'free',
-  hidden: false,
-  isMostPopular: false,
-}));
-
 const customTier = computed<PlanBase>(() => ({
   name: TIER_NAMES.CUSTOM,
   displayedName: t('pricing.plans.custom_plan'),
@@ -113,7 +102,7 @@ const customTier = computed<PlanBase>(() => ({
 const plans = computed<MappedPlan[]>(() => {
   const labels = get(featuresLabel);
   const descriptions = get(descriptionMap);
-  const allPlans = [get(freeTier), ...get(regularPlans).filter(x => !x.hidden), get(customTier)];
+  const allPlans = [...get(regularPlans).filter(x => !x.hidden), get(customTier)];
 
   return allPlans.map(plan => ({
     ...plan,
@@ -142,12 +131,6 @@ function isFeatureFlag(label: string, descriptionMap: FeatureDescriptionMap): bo
 }
 
 function getFeatureValue(plan: PlanBase, label: string, descriptionMap: FeatureDescriptionMap): FeatureValue {
-  if (isFreePlan(plan)) {
-    // Use shared free plan features
-    const feature = freePlanFeatures.find(f => f.label === label);
-    return feature?.value;
-  }
-
   if (isCustomPlan(plan)) {
     if (label.toLowerCase().includes('support')) {
       return t('pricing.custom_plan_bespoke_support');
