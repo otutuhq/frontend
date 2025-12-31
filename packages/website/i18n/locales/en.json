@@ -522,56 +522,56 @@
       "title": "Offerings"
     },
     "history_events": {
-      "subtitle": "View all historical events including, transactions, trades, deposits, withdrawals and more.",
-      "title": "History events",
+      "subtitle": "End-to-end sales process management from initial quotes to final payments, with comprehensive client relationship tracking and automated recurring billing capabilities.",
+      "title": "Sales",
       "key_features": "Key Features",
       "features": {
         "comprehensive": {
-          "title": "Comprehensive Transaction History",
-          "description": "View all historical transactions, including trades, transfers, and fees."
+          "title": "Invoices",
+          "description": "Create professional invoices with flexible line items, real-time tax and discount calculations, multi-currency support, and complete payment and status tracking from draft to settlement."
         },
         "categorization": {
-          "title": "Event Categorization",
-          "description": "Automatically classify transactions into deposits, withdrawals, trades, staking, and more."
+          "title": "Estimates",
+          "description": "Send clear, professional estimates with approval tracking, automatic expiration handling, and one-click conversion to invoices while preserving all line item details."
         },
         "customizable": {
-          "title": "Customizable history",
-          "description": "Manually adjust or add missing transactions to ensure accuracy."
+          "title": "Recurring Invoices",
+          "description": "Automate repeat billing with flexible schedules, reusable templates, and automatic invoice generation assigned to specific clients."
         },
         "filter": {
-          "title": "Filter & Search",
-          "description": "Easily find specific events using filters by date, asset, protocol, event type and more."
+          "title": "Clients",
+          "description": "Manage client relationships with real-time balance tracking, credit limits, multiple contacts, and a complete history of invoices, payments, and transactions."
         },
         "csv_export": {
-          "title": "CSV Export",
-          "description": "Export historical event data for external analysis or tax reporting."
+          "title": "Sales Dashboard Insights",
+          "description": "Get instant visibility into unpaid and overdue invoices, average payment times, and monthly revenue trends to monitor sales performance and cash flow."
         }
       }
     },
     "evm_protocols": {
-      "subtitle": "Manage assets across multiple protocols across EVM networks.",
-      "title": "EVM protocols",
+      "subtitle": "Comprehensive banking system with transaction synchronization, reconciliation, and multi-bank support for complete financial oversight.",
+      "title": "Banking",
       "key_features": "Key Features",
       "features": {
         "multi_chain_support": {
-          "title": "Multi-Chain Support",
-          "description": "Track assets across Ethereum and EVM-compatible chains like Polygon, BSC, and Arbitrum."
+          "title": "Bank Accounts",
+          "description": "Manage multi-currency bank and cash accounts across multiple financial institutions with real-time balance visibility, account type support, and comprehensive transaction tracking."
         },
         "automatic_activity_importing": {
-          "title": "Automatic Activity Importing",
-          "description": "Sync wallet activity directly from the blockchain."
+          "title": "Bank Feeds",
+          "description": "Automatically import transactions from connected banks with smart categorization, duplicate detection, and continuous feed synchronization for up-to-date records."
         },
         "defi_balances": {
-          "title": "DeFi Balances Monitoring",
-          "description": "View balances and positions in lending, borrowing, and liquidity pools."
+          "title": "Reconciliation",
+          "description": "Match bank transactions to accounting records with intelligent matching, batch reconciliation, discrepancy reporting, and a complete audit trail."
         },
         "staking_yield": {
-          "title": "Staking & Yield Farming",
-          "description": "Keep tabs on rewards from staking and yield-generating protocols."
+          "title": "Financial Operations",
+          "description": "Record and manage core financial movements including transfers, deposits, withdrawals, and internal adjustments with full ledger integration and traceability."
         },
         "historical_data": {
-          "title": "Historical Data & PnL",
-          "description": "Analyze past transactions and profit/loss from DeFi interactions."
+          "title": "Cash Flow Monitoring",
+          "description": "Track available balances, inflows, and outflows across all bank accounts to maintain clear visibility into liquidity and day-to-day financial health."
         }
       }
     },
@@ -709,16 +709,16 @@
     "profit_loss_report": {
       "details": {
         "pnl_explanation": {
-          "title": "Profit/loss report for your historical data",
-          "description": "A profit/loss report across all the user’s assets, protocols, exchanges and blockchains is created for the given time range. The results can be exported into a CSV file which can later be imported to a spreadsheet or shared directly with your accountant.\n\nProfit/loss report for free users has a transaction limit and does not take into account all possible protocols."
+          "title": "Bills",
+          "description": "Manage vendor bills with precision using a structured bill management system built for professional accounting workflows. Create detailed bills with line-item breakdowns, automatic tax and discount calculations, and multi-currency support. Track due dates, schedule payments, record partial or bulk payments, and link bills to purchase order references for better traceability. Maintain a complete payment history with real-time visibility into outstanding payables and cash flow impact."
         },
         "free_vs_premium": {
-          "title": "Free vs. Premium:",
-          "description": "Free users can generate reports with a transaction limit and partial protocol coverage. Upgrade to Premium for unlimited reporting and full protocol support."
+          "title": "Vendors",
+          "description": "Organize and manage all suppliers and contractors in one centralized vendor management system. Store complete vendor profiles including contact details, currencies, payment terms, and compliance information. Monitor real-time vendor balances, track payment history, and analyze vendor performance over time. Gain clear visibility into outstanding obligations, strengthen supplier relationships, and maintain accurate accounts payable records across your business."
         }
       },
-      "title": "Profit/loss report",
-      "subtitle": "A profit/loss report for all your historical data"
+      "title": "Purchases",
+      "subtitle": "Streamlined vendor management and expense tracking system with comprehensive payable monitoring and cash flow optimization tools."
     },
     "rotki_offer": "What does {0} offer?",
     "testimonials": {
@@ -729,24 +729,24 @@
       "key_features": "Key Features",
       "features": {
         "automated_bookkeeping": {
-          "title": "Automated Bookkeeping",
-          "description": "Automatically categorize and record transactions with AI-powered precision"
+          "title": "Transactions",
+          "description": "Record deposits, withdrawals, transfers, and journal entries with automatic double-entry posting, full audit trails, bulk actions, and multi-currency support — all fully integrated with your accounts."
         },
         "real_time_reporting": {
-          "title": "Real-time Reporting",
-          "description": "Get instant financial insights with live dashboards and reports"
+          "title": "Chart of Accounts",
+          "description": "Manage a structured chart of accounts with parent-child hierarchies, real-time balances, standard account types, and clean reporting through active and inactive account control."
         },
         "multi_currency": {
-          "title": "Multi-Currency Support",
-          "description": "Handle transactions in multiple currencies with automatic conversion"
+          "title": "Financial Reports",
+          "description": "Access essential financial reports including receivables and payables aging, client and vendor balances, and payment performance insights to stay on top of cash flow."
         },
         "tax_compliance": {
-          "title": "Tax Compliance",
-          "description": "Stay compliant with automated tax calculations and reporting features"
+          "title": "Client & Vendor Reports",
+          "description": "Track client and vendor financial activity with clear aging reports, balance summaries, and payment behavior analysis for better relationship and cash-flow management."
         },
         "audit_trails": {
-          "title": "Complete Audit Trails",
-          "description": "Maintain comprehensive records for regulatory compliance and transparency"
+          "title": "Detailed Financial Reports",
+          "description": "Generate professional balance sheets, income statements, trial balances, and detailed account activity reports for accurate reconciliation and decision-making."
         }
       }
     }
