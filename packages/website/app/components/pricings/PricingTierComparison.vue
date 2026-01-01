@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import type { AvailablePlans } from '@rotki/card-payment-common/schemas/plans';
 import type { FeatureDescriptionMap, FeatureValue, MappedPlan, PlanBase } from '~/components/pricings/type';
-import { get, set } from '@vueuse/shared';
+import { get } from '@vueuse/shared';
 import PricingTable from '~/components/pricings/PricingTable.vue';
 import PricingTabs from '~/components/pricings/PricingTabs.vue';
 import { isCustomPlan } from '~/components/pricings/utils';
@@ -22,7 +22,6 @@ const props = withDefaults(defineProps<{
 const { t } = useI18n({ useScope: 'global' });
 const { isXlAndUp } = useBreakpoint();
 
-const compactView = ref<boolean>(false);
 const isYearly = computed<boolean>(() => props.selectedPeriod === PricingPeriod.YEARLY);
 
 const featuresLabel = computed<string[]>(() => {
@@ -110,15 +109,7 @@ const plans = computed<MappedPlan[]>(() => {
   }));
 });
 
-const allowCompact = computed<boolean>(() => props.compact && get(featuresLabel).length > 0);
-
-const displayedFeaturesLabel = computed<string[]>(() => {
-  if (get(compactView)) {
-    const firstLabel = get(featuresLabel)[0];
-    return firstLabel ? [firstLabel] : [];
-  }
-  return get(featuresLabel);
-});
+const displayedFeaturesLabel = computed<string[]>(() => get(featuresLabel));
 
 function isFeatureFlag(label: string, descriptionMap: FeatureDescriptionMap): boolean {
   for (const [_planName, features] of descriptionMap) {
@@ -144,10 +135,6 @@ function getFeatureValue(plan: PlanBase, label: string, descriptionMap: FeatureD
 
   return descriptionMap.get(plan.name)?.get(label);
 }
-
-watch(allowCompact, (value) => {
-  set(compactView, value);
-}, { immediate: true });
 </script>
 
 <template>
@@ -155,29 +142,24 @@ watch(allowCompact, (value) => {
     <PricingTable
       v-if="isXlAndUp"
       :plans="plans"
-      :compact="compactView"
+      :compact="false"
       :selected-period="selectedPeriod"
       :features-label="displayedFeaturesLabel"
     />
     <PricingTabs
       v-else
       :plans="plans"
-      :compact="compactView"
+      :compact="false"
       :selected-period="selectedPeriod"
       :features-label="displayedFeaturesLabel"
     />
-    <div class="flex justify-center">
+    <div class="flex justify-center mt-8">
       <RuiButton
-        v-if="allowCompact"
         color="primary"
         size="lg"
-        @click="compactView = !compactView"
+        @click="navigateTo('/signup')"
       >
-        {{
-          compactView
-            ? t('pricing.see_all_features')
-            : t('pricing.see_less_features')
-        }}
+        {{ t('actions.sign_up') }}
       </RuiButton>
     </div>
   </ClientOnly>
