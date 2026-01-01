@@ -215,56 +215,56 @@
     "welcome": "Welcome"
   },
   "accounting": {
-    "title": "Your Crypto Accounting, Done Right, By the People Who Built rotki",
-    "intro": "Crypto accounting isn’t plug-and-play. Every portfolio is unique, and getting it right means going deep: cleaning messy data, classifying complex events and ensuring your numbers actually make sense. Since 2017, rotki has helped users take control of their crypto finances. Now, for those who need hands-on help, we offer bespoke accounting services using rotki itself and tailored scripts to deliver complete, accurate results.",
+    "title": "Your Business Accounting, Done Right — By the Team Behind Otutu",
+    "intro": "Business accounting is never one-size-fits-all. Every company has its own structure, processes, history, and reporting needs. Getting it right means going beyond basic setup—cleaning historical data, fixing inconsistencies, classifying complex transactions, and ensuring your financials truly reflect reality. Otutu was built to give businesses full control over their accounting. For organizations that need hands-on support, we offer bespoke accounting services powered directly by Otutu—combining our platform with expert-led configuration and data refinement to deliver accurate, audit-ready results.",
     "services": {
       "tailored": {
-        "title": "Tailored To Your Needs",
-        "description": "No two portfolios are the same. We work with your exact data, wallets, CSVs, DeFi positions, NFTs and customize every step to match your accounting requirements."
+        "title": "Tailored to Your Business",
+        "description": "No two businesses operate the same way. We work directly with your real data—bank statements, invoices, bills, vendor records, payroll summaries, and historical spreadsheets—and tailor every step to match how your business actually runs. Whether you’re migrating from another accounting system, cleaning years of messy records, setting up multi-entity books, or aligning your accounts with reporting requirements, our approach adapts to your specific needs, industry, and scale."
       },
       "scripts": {
-        "title": "Built on rotki + Scripts",
-        "description": "We use rotki as the accounting engine, enhanced with custom scripts and tooling tailored to your case. The result: accurate, explainable data that you can use for your specific use case. You get both the data back and the scripts we made for you for reproducability."
+        "title": "Built on Otutu, Customized for You",
+        "description": "Otutu serves as the core accounting engine for this service. We configure charts of accounts, workflows, reporting structures, and automations specifically for your business, ensuring your books are accurate, explainable, and consistent. You receive not just clean data, but a properly structured Otutu setup that you can continue using confidently. Everything we configure is transparent and reproducible, so your accounting remains stable long after the engagement ends."
       },
       "hands_on": {
-        "title": "Hands-On Service",
-        "description": "This isn’t SaaS. It's a service. We work directly with you: identify edge cases, fix data problems, label transactions, track missing histories, and explain every number."
+        "title": "A True Hands-On Service",
+        "description": "This is not self-serve software support. This is a professional service. We work directly with you to identify edge cases, resolve data gaps, reconcile accounts, correct misclassifications, and explain every figure in your financial statements. From historical cleanup to ongoing accounting support, we handle the details so your books make sense and stand up to scrutiny."
       },
       "privacy": {
-        "title": "Privacy First, Always",
-        "description": "Your data stays with us. No uploads to third-party cloud tools. Everything is processed locally or on secure infrastructure we control. Your data is all deleted once we complete the job for you. Your privacy and peace of mind is our top priority."
+        "title": "Privacy, Security, and Trust",
+        "description": "Your financial data is treated with the highest level of care. All work is handled securely using controlled environments and strict access policies. Your data is never shared with third parties, and confidentiality is guaranteed throughout the engagement. Once the work is completed, access is revoked and data handling follows strict retention and deletion standards—your privacy and peace of mind always come first."
       }
     },
     "formalization": {
       "title": "Our Approach",
-      "description": "rotki has always been about empowering users with accurate, private, local-first accounting tools. But not everyone has the time or expertise to dig into every transaction, match LP positions, or chase down lost CSVs. If you want your crypto accounting done with you or for you, using the same tools we’ve built and trusted for years, we’re here to help. We’ve worked with individuals, teams, and DAOs to get their books in order, clean, audit-ready, and future-proof. Not by using generic tax software but just with a deep understanding of the crypto landscape and a commitment to doing it right."
+      "description": "Otutu was designed to give businesses clarity, structure, and confidence in their financial operations. But not every business has the time or internal expertise to clean historical records, reconcile accounts, or design a future-proof accounting setup. Our bespoke accounting service exists for those moments. We work with founders, finance teams, accountants, and growing companies to bring order to their books—making them clean, compliant, and ready for growth. Not through generic templates, but through deep understanding of business operations and a commitment to doing accounting properly."
     },
     "contact": {
-      "message": "Or, you can email us at {email} with a short summary of your situation."
+      "message": "Or email us at {email} with a brief overview of your business and accounting needs."
     },
     "pricing": {
       "title": "Pricing",
-      "intro": "Crypto accounting is complicated. We make it simple, by doing it right. This is a premium, hands-on service where we take your data, analyze it in depth, and deliver clear, accurate results you can trust.",
+      "intro": "Business accounting can be complex. We make it simple by doing it right. This is a premium, hands-on service focused on delivering clarity, accuracy, and long-term value.",
       "initial_consultation": {
         "excluding_vat": "(excl. VAT)",
         "title": "Initial Consultation",
         "price": "€300",
         "per_hour": "/hour",
-        "description": "The initial consultation takes from 1-3 hours on average. We'll dig into your portfolio: review your rotki data, check your wallets, exchanges, and DeFi activity, and map out what needs to be done. You'll get a clear plan and an honest assessment of the work involved."
+        "description": "The initial consultation typically lasts 1–3 hours. We review your existing accounting setup, financial data, workflows, and reporting requirements. You’ll receive a clear assessment of your current state, key issues, and a concrete plan for moving forward."
       },
       "custom_quote": {
-        "title": "Custom Quote for the Full Job",
-        "description": "After the consultation, we'll give you a tailored offer based on your situation. Not vague promises but just a fair price for the actual time and complexity. Whether it's a cleanup, a full accounting year, or ongoing help, we'll scope it together."
+        "title": "Custom Quote for the Full Engagement",
+        "description": "After the consultation, we provide a tailored proposal based on the actual scope and complexity of your needs. Whether it’s historical cleanup, full system migration, multi-year accounting, or ongoing support, pricing is transparent and based on real effort—not vague estimates."
       },
       "transparent_fair": {
         "title": "Transparent and Fair",
-        "description": "If you decide not to proceed after the initial consultation, that's perfectly fine. You'll still leave with a clearer understanding of your accounting situation."
+        "description": "If you choose not to proceed beyond the consultation, that’s completely fine. You’ll still walk away with valuable insights and a clearer understanding of your accounting situation."
       }
     },
     "important_note": {
       "title": "Important note",
-      "paragraph1": "This is a crypto accounting and data preparation service. We help you organize, clean, and analyze your financial history so you (or your tax advisor) have a clear and complete picture.",
-      "paragraph2": "We do not provide tax advice or file tax returns. For filing taxes, we recommend working with a qualified tax professional in your jurisdiction who can use the data we prepare for you. We can also work directly with your tax advisor if you need us to."
+      "paragraph1": "This is an accounting setup, cleanup, and data preparation service. We help organize, reconcile, and structure your financial records so you and your advisors have a complete and accurate view of your business.",
+      "paragraph2": "We do not provide tax advice or file tax returns. For tax filing and statutory submissions, we recommend working with a licensed tax professional in your jurisdiction. We’re happy to collaborate directly with your accountant or auditor using the data prepared in Otutu."
     }
   },
   "account_details": {
@@ -876,101 +876,101 @@
     }
   },
   "products": {
-    "description": "Elevate your financial management with rotki premium, our exclusive subscription offering. Gain access to advanced tools and features designed to enhance the management of your portfolio and investments.",
+    "description": "Otutu unifies your entire financial workflow—from offerings and invoicing to vendor bills, banking, reconciliation, and reporting. Sales, purchases, accounting, and banking are deeply integrated, ensuring consistency across every financial process. No disconnected tools. No duplicated data. Just a single source of truth for your business finances.",
     "features": {
       "analytics": {
         "asset_amount_and_value": {
-          "description": "Access comprehensive analytics, including net value and asset amount over time for each owned asset.",
-          "title": "Asset tracking"
+          "description": "Get a clear, accurate view of your business’s financial position at any point in time. Otutu provides professionally structured financial statements—including balance sheets, income statements, and trial balances—built on true double-entry accounting principles. These statements help you understand profitability, cash flow, assets, liabilities, and equity, giving you the confidence to make informed financial and strategic decisions.",
+          "title": "Financial Statements"
         },
         "distribution_assets": {
-          "description": "View a distribution pie chart of your net value per assets.",
-          "title": "Value distribution (assets)"
+          "description": "Gain full visibility into your customer relationships and revenue performance. Otutu’s client reports break down invoices, payments, outstanding balances, and aging details by client, allowing you to track who owes you, how long invoices have been outstanding, and overall payment behavior. These insights help you improve cash flow, manage credit terms, and maintain healthy client relationships.",
+          "title": "Client Reports"
         },
         "distribution_locations": {
-          "description": "View a distribution pie chart of your net value per location (exchanges, blockchain accounts, banks, etc.).",
-          "title": "Value distribution (locations)"
+          "description": "Stay in control of your payables and supplier obligations with detailed vendor reporting. Otutu provides clear reports on bills, payments, outstanding balances, and aging by vendor, helping you manage due dates, plan payments, and avoid missed obligations. With complete vendor transaction histories and balance tracking, you can optimize cash flow while maintaining strong supplier relationships.",
+          "title": "Vendor Reports"
         },
         "events_analysis": {
-          "description": "View a summary of your activities, including ETH spent, exchanges/protocols used, and Gnosis Pay usage.",
-          "title": "Events analysis"
+          "description": "Dive deeper into your financial data with comprehensive, transaction-level reporting. Otutu’s detailed reports provide full visibility into account movements, journal entries, and balance changes across your entire chart of accounts. From individual transaction histories to account balance summaries, these reports ensure transparency, traceability, and audit readiness across all financial operations.",
+          "title": "Detailed Reports"
         },
         "heading": "Enhanced Data Insights",
         "title": "Graphs & Analytics"
       },
       "detailed_graphs": {
-        "description": "Access a wide array of analytics and graphs. Analyze your total net value over time, asset value distributions, and the worth distribution per asset or location.",
-        "title": "Detailed Graphs"
+        "description": "Otutu is built for businesses that operate beyond a single currency or market. With native multi-currency support across sales, purchases, banking, and accounting, Otutu automatically handles currency conversions, exchange rate tracking, and accurate reporting. Whether you invoice international clients, pay foreign vendors, or manage multiple bank accounts, Otutu keeps your financials consistent and transparent.",
+        "title": "Designed for Global and Multi-Currency Operations"
       },
       "enriched_transactions": {
-        "description": "Connect your Monerium and Gnosis Pay accounts to automatically enrich your blockchain transactions with detailed metadata, including bank transfer details, credit card merchant data, and payment descriptions.",
-        "title": "Enriched protocol transactions"
+        "description": "Otutu is built with a secure multi-tenant architecture, ensuring complete data isolation between companies while maintaining performance and scalability. Each organization operates independently, with role-based access control, audit logging, and secure authentication. Your data remains private, protected, and accessible only to authorized users.",
+        "title": "Secure Multi-Tenant Architecture You Can Trust"
       },
       "events_analysis": {
-        "description": "View detailed insights about your activities, including ETH spent, exchanges/protocols used, number of transactions per chain, and Gnosis Pay usage.",
-        "title": "Events Analysis"
+        "description": "Otutu automates the repetitive and error-prone parts of accounting so you can focus on running your business. From real-time tax and discount calculations to recurring invoices, automated journal entries, bank feeds, and smart reconciliation, Otutu minimizes manual input while maintaining full control and accuracy. Automation is applied thoughtfully—enhancing productivity without hiding critical financial details.",
+        "title": "Intelligent Automation That Reduces Manual Work"
       },
       "scales_with_your_need": {
-        "description": "From Free to Basic and Basic to Advanced, each rotki plan unlocks higher limits for trades, events, and data giving you the freedom to choose the plan that fits your needs.",
-        "title": "Scales With Your Needs"
+        "description": "Otutu goes beyond basic summaries. It delivers professional financial statements and analytical reports that help you understand not just what happened, but why it happened. Generate balance sheets, income statements, trial balances, receivables aging, payables aging, and detailed account activity reports with confidence. Sales and purchase dashboards provide insights into cash flow, payment performance, outstanding balances, and financial trends—so decisions are driven by data, not assumptions.",
+        "title": "Advanced Reporting for Real Business Decisions"
       },
       "limits": {
         "heading": "Expanded Capabilities for Premium Users",
         "history_view": {
-          "description": "Free users can access up to 1,000 of their most recent events. Premium users unlock higher limits depending on their chosen plan.",
-          "title": "History view"
+          "description": "A powerful offerings management system designed to handle both products and services with enterprise-grade flexibility. Otutu allows you to define what you sell and what you buy with precision, ensuring every offering is correctly priced, taxed, and mapped to the right accounts. With support for sellable and purchasable configurations, automatic tax associations, and built-in discount management, Otutu removes the complexity of product setup and eliminates costly configuration errors. Dynamic controls and real-time validation ensure your catalog stays accurate, scalable, and accounting-ready as your business grows.",
+          "title": "Intelligent Product & Service Catalog"
         },
         "profit_loss_report": {
-          "description": "Free users are limited to the 1,000 most recent events in the profit & loss report. Premium users get higher limits based on their plan.",
-          "title": "Profit & Loss Reports"
+          "description": "Manage your entire sales lifecycle—from quotes to cash—in one seamless system. Otutu connects estimates, invoices, recurring billing, and client balances into a single, unified workflow that gives you complete visibility into how revenue is generated, collected, and tracked. From professional invoicing with real-time calculations to automated recurring invoices and client payment analytics, Otutu ensures nothing falls through the cracks. Built-in sales dashboards provide insights into overdue invoices, payment behavior, and revenue trends, helping you stay in control of cash flow and customer relationships.",
+          "title": "End-to-End Revenue Operations"
         },
         "title": "Increased limits",
         "user_notes": {
-          "description": "Free users can add up to 10 notes. Premium users enjoy unlimited notes.",
-          "title": "User Notes"
+          "description": "Take full control of expenses and supplier obligations with a purchases system built for accuracy, accountability, and cash-flow optimization. Otutu ensures every bill, payment, and vendor balance is properly tracked, categorized, and reflected in your financial records. Advanced bill management, multi-currency vendor support, bulk payments, and real-time payable monitoring give you a clear picture of what you owe and when. With detailed vendor analytics and performance tracking, you can manage supplier relationships professionally while keeping spending under control.",
+          "title": "Smart Payables & Vendor Control"
         },
         "validators": {
-          "description": "Free users can't track ETH staking. Premium users can track up to specific amounts of ETH depending on their chosen plan.",
-          "title": "Ethereum Staking"
+          "description": "Otutu is built on true double-entry accrual accounting, ensuring every transaction is balanced, traceable, and compliant with international accounting standards. Automatic journal entry creation guarantees accuracy across sales, purchases, banking, and manual transactions. A full chart of accounts with structured hierarchy, real-time balance tracking, and clean categorization provides a solid accounting foundation. Whether you’re handling daily bookkeeping or preparing financials for stakeholders, Otutu delivers reliability you can trust.",
+          "title": "Enterprise-Grade Financial Accounting"
         }
       },
       "data_synchronization": {
-        "description": "Premium users can securely back up and sync their encrypted database across devices. Your data is always protected by your password and never visible to us. The available backup size depends on your plan, and synced databases are automatically deleted one month after your subscription expires.",
-        "title": "Data Synchronization"
+        "description": "Otutu connects your bank accounts directly to your accounting system, ensuring your cash position is always accurate and up to date. Every bank movement is captured, categorized, and reconciled against your books for complete financial clarity. With support for multiple banks, multiple currencies, automated transaction feeds, and advanced reconciliation tools, Otutu removes guesswork from cash management. Detailed reconciliation reports and audit trails ensure transparency and compliance at every step.",
+        "title": "Complete Bank Visibility & Control"
       },
       "monerium_and_gnosis": {
-        "heading": "Enrich Transactions",
+        "heading": "Otutu is not just accounting software.",
         "monerium": {
-          "description": "Premium users can connect their Monerium account to enrich transactions across all supported chains with detailed bank transfer and bridging data.",
-          "title": "Monerium Bank Data"
+          "description": "Otutu automates the most time-consuming accounting tasks, reducing manual data entry and minimizing human error. Real-time calculations, automated tax and discount handling, recurring billing, and bulk operations work together to streamline daily operations. By enforcing accounting rules through automation, Otutu ensures consistency across all financial documents while freeing your team to focus on analysis, strategy, and business growth instead of repetitive tasks.",
+          "title": "Reduce Manual Work, Eliminate Errors"
         },
         "gnosis_pay": {
-          "description": "Premium users can connect their Gnosis Pay controller to enrich all card transactions with detailed merchant information.",
-          "title": "Gnosis Pay Merchant Data"
+          "description": "Otutu is built for businesses managing multiple companies, teams, or clients, with security and data privacy at its core. Each organization operates in a fully isolated environment, ensuring that company data remains private, secure, and protected. Role-based access control, comprehensive audit logging, and secure authentication ensure that only the right people have access to the right information. This enterprise-grade security architecture makes Otutu reliable, compliant, and ready for professional use at scale.",
+          "title": "Enterprise Security by Design"
         },
-        "title": "Monerium and Gnosis Pay Integration"
+        "title": "It is a professional financial foundation for modern businesses."
       },
       "staking": {
-        "description": "Track your staking activities across various chains and platforms like ETH, Liquity, Kraken, and more. Get detailed insights on total gains, performance, rewards breakdown, and individual staking events.",
-        "title": "Staking"
+        "description": "Otutu goes beyond basic summaries. It delivers professional financial statements and analytical reports that help you understand not just what happened, but why it happened. Generate balance sheets, income statements, trial balances, receivables aging, payables aging, and detailed account activity reports with confidence. Sales and purchase dashboards provide insights into cash flow, payment performance, outstanding balances, and financial trends—so decisions are driven by data, not assumptions.",
+        "title": "Audit-Ready by Design"
       },
       "sync_db_with_server": {
-        "description": "Effortlessly back up your data to our cloud and sync or restore it across multiple devices. Your data is encrypted and can only be decrypted with your password, ensuring complete privacy.",
-        "title": "Sync data across multiple machines"
+        "description": "Otutu is designed around enterprise-grade double-entry accrual accounting, the same accounting foundation used by professional firms and regulated businesses worldwide. Every transaction automatically generates balanced journal entries, ensuring accuracy, consistency, and compliance from day one. With a structured chart of accounts, real-time balance tracking, and strict debit/credit enforcement, your financial records remain clean, auditable, and reliable as your business grows.",
+        "title": "Built on Professional Accounting Standards"
       },
       "timeframe": {
-        "description": "Set the timeframe for the dashboard graph. Premium users have access to all options, while free users can choose between only \"2 Weeks\", and \"1 Week\".",
-        "title": "Timeframe Customization on Dashboard"
+        "description": "Move beyond basic reports with a comprehensive reporting suite designed for business owners, accountants, and finance professionals. Otutu transforms raw transaction data into clear, structured, and decision-ready financial insights. From balance sheets and income statements to receivables aging, payables analysis, and detailed account activity reports, Otutu gives you a complete view of your financial health. These reports are audit-ready, easy to understand, and suitable for banks, investors, and regulatory review.",
+        "title": "Professional Financial Intelligence"
       }
     },
     "footer": {
-      "description": "Upgrade to rotki premium today and take your financial management to the next level. Enjoy enhanced features, greater flexibility, and exclusive perks designed for the modern investor."
+      "description": "Upgrade to Otutu premium today and take your financial management to the next level. Enjoy enhanced features, greater flexibility, and exclusive perks designed for the modern investor."
     },
-    "heading": "Unlock the Full Potential of rotki with Premium Features",
-    "title": "Upgrade rotki today",
+    "heading": "Unlock the Full Potential of Otutu with Premium Features",
+    "title": "Complete Financial Operations in One Platform",
     "unlock": {
-      "description": "Unlock the full potential of rotki with a premium subscription. Whether you're a seasoned investor or just starting out, rotki premium provides the tools and resources you need to succeed in today's dynamic financial landscape.",
-      "title": "Unlock Premium Features"
+      "description": "Otutu is ideal for small to medium-sized businesses that need professional accounting without the cost, rigidity, or learning curve of traditional ERP systems. It delivers enterprise-grade functionality in a modern, intuitive platform—helping businesses operate with confidence, clarity, and control.",
+      "title": "Who Otutu Is Built For"
     }
   },
   "upgrade_plan": {

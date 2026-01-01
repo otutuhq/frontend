@@ -134,7 +134,7 @@ const services = computed(() => [
               size="20"
             />
           </template>
-          Book a Free 15-Min Intro call
+          Book a Free 30-Min Intro call
         </ButtonLink>
 
         <i18n-t
