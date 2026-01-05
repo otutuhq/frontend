@@ -35,11 +35,14 @@ const menus: MenuGroup[] = [
         to: '/bespoke',
         highlightActive: true,
       },
+      // Temporarily disabled - Integrations
+      /*
       {
         label: t('navigation_menu.integration.title'),
         to: '/integrations',
         highlightActive: true,
       },
+      */
     ],
   },
   {
@@ -75,11 +78,14 @@ const menus: MenuGroup[] = [
   {
     header: t('navigation_menu.legal'),
     items: [
+      // Temporarily disabled - Impressum
+      /*
       {
         label: t('navigation_menu.impressum'),
         to: '/impressum',
         highlightActive: true,
       },
+      */
       {
         label: t('navigation_menu.privacy_policy'),
         to: '/privacy-policy',
@@ -90,11 +96,14 @@ const menus: MenuGroup[] = [
         to: '/tos',
         highlightActive: true,
       },
+      // Temporarily disabled - FAQ
+      /*
       {
         label: t('navigation_menu.faq'),
         to: 'https://docs.rotki.com/faq',
         external: true,
       },
+      */
     ],
   },
 ];

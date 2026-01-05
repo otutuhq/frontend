@@ -15,7 +15,7 @@ Eleftherios Karapetsas
 
 ##### Kontakt
 
-email: info@rotki.com
+email: info@otutu.co
 
 ##### EU-Streitschlichtung
 

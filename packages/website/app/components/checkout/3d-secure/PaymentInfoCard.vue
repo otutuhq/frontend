@@ -50,7 +50,7 @@ const approvalInfo = computed<Record<string, string>>(() => {
         <span class="text-rui-text-secondary">{{ t('subscription.3d_secure.payment_info.recurring_charge') }}</span>
         <div class="text-right">
           <div class="font-semibold text-rui-text">
-            {{ paymentInfo.amount }}€ <span class="text-sm text-rui-text-secondary font-normal">{{ billingPeriod }}</span>
+            {{ paymentInfo.amount }}₦ <span class="text-sm text-rui-text-secondary font-normal">{{ billingPeriod }}</span>
           </div>
         </div>
       </div>
@@ -58,7 +58,7 @@ const approvalInfo = computed<Record<string, string>>(() => {
       <!-- Current charge (Grand Total) -->
       <div class="flex justify-between items-center py-4 border-y border-default">
         <span class="text-rui-text-secondary">{{ t('subscription.3d_secure.payment_info.charge_today') }}</span>
-        <span class="font-bold text-xl underline">{{ paymentInfo.finalAmount }}€</span>
+        <span class="font-bold text-xl underline">{{ paymentInfo.finalAmount }}₦</span>
       </div>
 
       <!-- Approval notice -->

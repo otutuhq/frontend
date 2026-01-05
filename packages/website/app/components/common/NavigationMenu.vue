@@ -48,21 +48,27 @@ const baseMenus: (Menu | MenuParent)[] = [
     ],
   },
   {
-    label: t('navigation_menu.pricing'),
-    to: '/pricing',
+    label: t('navigation_menu.values'),
+    to: '/values',
     highlightActive: true,
   },
+  // Temporarily disabled - Integrations
+  /*
   {
     label: t('navigation_menu.integration.title'),
     description: t('navigation_menu.integration.description'),
     to: '/integrations',
     highlightActive: true,
   },
+  */
+  // Temporarily disabled - Download
+  /*
   {
     label: t('navigation_menu.download'),
     to: '/download',
     highlightExactActive: true,
   },
+  */
   {
     label: t('navigation_menu.resources'),
     children: [

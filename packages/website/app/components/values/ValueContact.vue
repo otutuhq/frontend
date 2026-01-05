@@ -23,7 +23,7 @@ const contacts: { title: string; description: string; href: string; icon: RuiIco
     description: t('values.contact_section.twitter.description'),
     href: twitter,
     icon: 'lu-x-twitter',
-    linkLabel: '@RotkiApp',
+    linkLabel: '@OtutuHQ',
   },
   {
     title: 'Discord',

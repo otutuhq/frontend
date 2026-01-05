@@ -125,7 +125,7 @@ onMounted(() => {
               {{ durationDescription }}
             </div>
             <div class="mt-3">
-              Price: <span class="font-bold">{{ selectedPlan.price }} €</span>
+              Price: <span class="font-bold">{{ selectedPlan.price }} ₦</span>
               <template v-if="vatOverview">
                 ({{ vatOverview.basePrice }} + {{ vatOverview.vat }}% VAT)
               </template>

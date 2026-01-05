@@ -136,19 +136,19 @@ watch(price, (price) => {
 
     <div class="flex items-baseline gap-2">
       <div class="font-bold text-[2.5rem] leading-none text-rui-text">
-        {{ price }}€
+        {{ price }}₦
       </div>
       <div
         v-if="discountInfo"
         class="text-base text-rui-text-secondary line-through font-normal opacity-70"
       >
-        {{ discountInfo.originalPrice }}€
+        {{ discountInfo.originalPrice }}₦
       </div>
     </div>
 
     <div class="text-sm text-rui-text-secondary mt-2 mb-4 font-normal min-h-[1.25rem]">
       <div v-if="discountInfo">
-        {{ discountInfo.monthlyPrice }}€/{{ t('pricing.per_month') }} ({{ t('home.plans.saving', { months: discountInfo.freeMonths }) }})
+        {{ discountInfo.monthlyPrice }}₦/{{ t('pricing.per_month') }} ({{ t('home.plans.saving', { months: discountInfo.freeMonths }) }})
       </div>
     </div>
 

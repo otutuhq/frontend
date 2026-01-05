@@ -66,7 +66,7 @@ const services = computed(() => [
               external
               :to="twitter"
             >
-              @RotkiApp
+              @OtutuHQ
             </ButtonLink>
           </template>
         </i18n-t>

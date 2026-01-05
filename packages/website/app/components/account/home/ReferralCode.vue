@@ -56,7 +56,7 @@ const discountAmount = computed<string>(() => {
   if (discountType === 'Percentage') {
     return `${amount}%`;
   }
-  return `${amount}€`;
+  return `${amount}₦`;
 });
 
 const shareUrl = computed<string>(() => {

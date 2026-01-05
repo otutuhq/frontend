@@ -18,7 +18,7 @@
     "referral_code": {
       "code": "Referral Code",
       "description": "Generate a unique referral code to share with friends and earn rewards when they subscribe to rotki premium.",
-      "discount_amount": "People using this code get {amount}€ off their first subscription",
+      "discount_amount": "People using this code get {amount}₦ off their first subscription",
       "discount_benefit": "Referral Discount",
       "discount_percentage": "People using this code get {percentage}% off their first subscription",
       "email_subject": "Save on rotki premium with my referral code",
@@ -78,7 +78,7 @@
       "tagline": "Unlock the full power of rotki",
       "features_starting_from": "Premium features starting from:",
       "upgrade_now": "Upgrade Now",
-      "upgrade_from": "from {price}€/mo",
+      "upgrade_from": "from {price}₦/mo",
       "view_all_plans": "View All Plans"
     },
     "payments": {
@@ -89,7 +89,7 @@
       },
       "no_payments_found": "No payments found",
       "paid": "Paid",
-      "price_before_discount": "Price before discount €{amount}",
+      "price_before_discount": "Price before discount ₦{amount}",
       "refunded": "Refunded",
       "upgraded_from": "Upgrade from {plan}",
       "title": "Your latest payments"
@@ -158,7 +158,7 @@
         },
         "description": "By confirming, your subscription's billing cycle will resume, and you will be charged according to your selected plan starting from the next billing date. Are you sure you want to resume your subscription?",
         "details": {
-          "amount_in_eur": "{amount} €",
+          "amount_in_eur": "{amount} ₦",
           "billing_amount": "Billing Amount: {amount}",
           "billing_cycle": "Billing Cycle: {duration}",
           "duration_in_months": "every {duration} month|every {duration} months",
@@ -248,7 +248,7 @@
       "initial_consultation": {
         "excluding_vat": "(excl. VAT)",
         "title": "Initial Consultation",
-        "price": "€300",
+        "price": "₦100,000",
         "per_hour": "/hour",
         "description": "The initial consultation typically lasts 1–3 hours. We review your existing accounting setup, financial data, workflows, and reporting requirements. You’ll receive a clear assessment of your current state, key issues, and a concrete plan for moving forward."
       },
@@ -295,6 +295,7 @@
     "renew": "Renew",
     "reset": "Reset",
     "save": "Save",
+    "sign_up": "Sign up",
     "resume": "Resume",
     "start_now_for_free": "Start now for free",
     "submit": "Submit",
@@ -630,7 +631,7 @@
             "apply_code": "Apply code",
             "first_payment_only": "* Applies to first payment only",
             "hint": "Optional. Enter a discount code to apply savings to your purchase.",
-            "you_save": "You save {amount}€",
+            "you_save": "You save {amount}₦",
             "percent_off": "({percentage}% off)",
             "label": "Discount/Referral Code"
           },
@@ -643,7 +644,7 @@
             "select_network_and_token": "Select network and token to pay"
           },
           "notes": {
-            "line_1": "Please submit a payment request. Once that is done an email will be sent to your account with a payment request of the equivalent € amount of that cryptocurrency based on the rates given by CryptoCompare",
+            "line_1": "Please submit a payment request. Once that is done an email will be sent to your account with a payment request of the equivalent ₦ amount of that cryptocurrency based on the rates given by CryptoCompare",
             "line_2": "Once the whole amount is sent and processed by our system, then a receipt will be sent to your email and your subscription will be activated.",
             "line_3": "Finally, when the end of the subscription period approaches an email with a prompt to generate another payment request will be sent."
           },
@@ -795,12 +796,12 @@
   "navigation_menu": {
     "accounting_service": "Bespoke Accounting",
     "blog": {
-      "description": "Latest news and updates on rotki",
+      "description": "Latest news and updates on Otutu",
       "title": "Blog"
     },
     "company": "Company",
     "documentation": {
-      "description": "Everything you need to know about the app",
+      "description": "Everything you need to know about the Otutu app",
       "title": "Documentation"
     },
     "download": "Download",
@@ -852,8 +853,8 @@
     }
   },
   "pricing": {
-    "billed_annually": "Billed annually in € {price}",
-    "billed_monthly": "Billed monthly in EUR",
+    "billed_annually": "Billed annually in ₦ {price}",
+    "billed_monthly": "Billed monthly in Naira",
     "header": {
       "heading": "Pricing"
     },
@@ -990,10 +991,10 @@
   "selected_plan_overview": {
     "includes_vat": "(includes {vat}% VAT)",
     "plan": "{period} recurring subscription | {period} subscription",
-    "price": "Price: {price} € {vat}",
+    "price": "Price: {price} ₦ {vat}",
     "starting": "Starting Date: {date}",
     "renew_period": "{months} month | 1 year ({months} months)",
-    "vat": "({basePrice}€ + {vat}% VAT)",
+    "vat": "({basePrice}₦ + {vat}% VAT)",
     "recurring_info": "You will be charged automatically each {period} until you cancel",
     "one_time_payment": "Crypto payments are non-recurring (one time payment). \nManual renewal is required.",
     "month": "month",
@@ -1201,7 +1202,7 @@
         "recurring_charge": "Recurring charge",
         "per_month": "/mo",
         "per_year": "/yr",
-        "approval_notice": "By completing this verification, you agree to an immediate charge of {immediateAmount}€ and recurring payments of {amount}€ {period} until you cancel your subscription."
+        "approval_notice": "By completing this verification, you agree to an immediate charge of {immediateAmount}₦ and recurring payments of {amount}₦ {period} until you cancel your subscription."
       }
     }
   },
@@ -1256,37 +1257,37 @@
         "description": "See our daily updates."
       }
     },
-    "subtitle": "Our mission is to empower users to take control of their finances both in and out of crypto in a transparent and auditable way while enabling them to own their data through a self-sovereign application.",
+    "subtitle": "Otutu exists to empower businesses and individuals to take full control of their finances—clearly, transparently, and confidently. Our mission is to make accounting understandable, auditable, and trustworthy, while ensuring businesses truly own their financial data. We believe financial systems should work for their users, not lock them in, obscure the truth, or compromise privacy.",
     "title": "Nice to meet you",
     "values_section": {
-      "description": "We are driven by a set of core values that guide our every action and decision. Our commitment to these values is what sets us apart and ensures that our users receive the utmost quality and service.",
+      "description": "At Otutu, our values are not marketing slogans—they guide how we design our software, work with customers, and make long-term decisions. They shape the product we build and the company we are becoming. Our team operates with trust and responsibility. Each person takes ownership of their work while understanding that meaningful progress comes from collaboration. We emphasize teamwork over individual stardom, shared goals over personal credit, and long-term thinking over short-term wins. Great financial software is built through consistency, care, and collective effort.",
       "list": {
         "line_1": {
-          "title": "We are:",
-          "value": "a team of dedicated builders driven by our love for what we create. Our passion lies in developing applications that bring tangible value to our users. We believe in the power of open-source development, as it enables transparency, audibility, and the provision of user guarantees."
+          "title": "We Are Builders:",
+          "value": "We are a team of dedicated builders who genuinely care about what we create. We don’t build features for the sake of complexity—we build systems that solve real financial problems. Our focus is on creating accounting software that delivers real-world value: clarity in numbers, confidence in decisions, and trust in the data behind every report. We believe software should earn trust through correctness, transparency, and reliability."
         },
         "line_2": {
           "local_first": "Local-first",
           "open_source": "Open-source",
-          "title": "We build:",
-          "value": "- {open_source}: Because that's the only way to create transparent applications that can be audited and provide users with guarantees.\n- {local_first}: Building local applications that store all data locally is the only way to guarantee data privacy and true ownership. Nobody can deny access to the app or the data to the user if it's a local application."
+          "title": "We Build with Principles:",
+          "value": "Otutu is built on strong foundational principles that prioritize users over shortcuts. We believe accounting software must be understandable and auditable. Financial systems should not be black boxes. Every calculation, balance, and report should be explainable and traceable. Your financial data belongs to you—always. We design Otutu so businesses maintain control over their records, histories, and reports without unnecessary restrictions or lock-ins. Financial data is deeply sensitive. We treat privacy as a core requirement, not an afterthought. Our architecture and workflows are designed to protect user data and limit unnecessary exposure."
         },
         "line_3": {
-          "title": "We welcome:",
-          "value": "external open-source contributors who understand our mission and utilise our product themselves, driven by the desire to help it reach its maximum potential.\n\nOur team can independently shoulder their responsibilities, taking ownership of their work. We value teamwork and collaboration, emphasising the importance of collective effort rather than individual stardom."
+          "title": "We Welcome Collaboration:",
+          "value": "We believe the best systems are built together. Otutu welcomes contributors, partners, and professionals who share our mission and actively use the product themselves. Whether through feedback, integrations, extensions, or improvements, collaboration helps Otutu grow stronger and more resilient over time. We value people who are motivated by quality, integrity, and long-term impact—not quick wins."
         }
       },
       "title": "Values"
     },
     "vision_section": {
-      "description": "rotki is the portfolio tracking, management and accounting tool for your finances. The one-stop app for viewing and managing your finances. rotki aspires to: ",
+      "description": "Otutu is building the foundation for modern business finance. We envision Otutu as a single, trusted system where businesses can view, manage, and understand their entire financial operation—clearly and accurately. Otutu aspires to:",
       "list": {
-        "line_1": "Be the one place to track your entire portfolio across on-chain crypto, banks, stocks, trades and more.",
-        "line_2": "Allow you to manage your finances, perform trades across CEXes, on-chain swaps, and other brokers from one interface.",
-        "line_3": "Create monthly/quarterly/yearly reports covering assets across all mentioned locations.",
+        "line_1": "Be the central place to manage accounting, banking, payables, receivables, and financial reporting.",
+        "line_2": "Provide a clear, real-time view of business performance and financial health.",
+        "line_3": "Enable accurate monthly, quarterly, and yearly financial reporting without complexity.",
         "line_4": "A modular system that many contributors outside our team can extend. For example, if someone wants to integrate tax accounting rules for a specific jurisdiction, they are experts on or integrate a chain they know of."
       },
-      "title": "Vision"
+      "title": "Our Vision"
     }
   },
   "payment_methods": {
@@ -1298,8 +1299,8 @@
       "verification_message": "If prompted, please complete the 3D Secure verification to continue.",
       "billing_info_title": "Important Billing Information",
       "billing_info_replace": "By confirming, this card will replace your current payment method.",
-      "billing_info_reauth": "By confirming, you are re-authorizing this payment method.",
-      "billing_info_schedule": "Starting from {date}, this card will be charged {amount}€ {period} until you cancel your subscription."
+      "billing_info_reauth": "Support businesses as they grow—from simple bookkeeping to multi-entity operations.",
+      "billing_info_schedule": "Remain extensible and adaptable, allowing the platform to evolve with new financial needs, regulations, and use cases. Otutu is designed to grow with its users, without compromising on transparency, control, or trust."
     }
   }
 }

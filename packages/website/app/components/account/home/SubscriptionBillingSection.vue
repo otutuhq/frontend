@@ -34,7 +34,7 @@ const isCancelled = computed<boolean>(() => isCancelledButActive(props.subscript
             class="text-h5 font-bold"
             :class="isCancelled ? 'text-rui-warning line-through' : 'text-rui-primary'"
           >
-            {{ subscription.nextBillingAmount ? subscription.nextBillingAmount.toFixed(2) : '0.00' }} €
+            {{ subscription.nextBillingAmount ? subscription.nextBillingAmount.toFixed(2) : '0.00' }} ₦
           </div>
           <span
             v-if="isCancelled"

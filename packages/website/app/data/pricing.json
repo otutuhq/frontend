@@ -1,7 +1,7 @@
 {
   "availablePlans": {
     "settings": {
-      "country": "DE",
+      "country": "NG",
       "isAuthenticated": false
     },
     "tiers": [
@@ -10,12 +10,12 @@
         "isCustom": false,
         "monthlyPlan": {
           "planId": 1,
-          "price": "25.00"
+          "price": "25000.00"
         },
         "tierName": "Basic",
         "yearlyPlan": {
           "planId": 2,
-          "price": "250.00"
+          "price": "250000.00"
         }
       },
       {
@@ -23,12 +23,12 @@
         "isCustom": false,
         "monthlyPlan": {
           "planId": 3,
-          "price": "45.00"
+          "price": "50000.00"
         },
         "tierName": "Advanced",
         "yearlyPlan": {
           "planId": 4,
-          "price": "450.00"
+          "price": "500000.00"
         }
       },
       {
@@ -83,12 +83,12 @@
       },
       "monthlyPlan": {
         "id": 1,
-        "price": "25.00"
+        "price": "25000.00"
       },
       "name": "Basic",
       "yearlyPlan": {
         "id": 2,
-        "price": "250.00"
+        "price": "250000.00"
       }
     },
     {
@@ -133,12 +133,12 @@
       },
       "monthlyPlan": {
         "id": 3,
-        "price": "45.00"
+        "price": "50000.00"
       },
       "name": "Advanced",
       "yearlyPlan": {
         "id": 4,
-        "price": "450.00"
+        "price": "500000.00"
       }
     },
     {
@@ -189,47 +189,47 @@
   "priceBreakdowns": {
     "1": {
       "planId": 1,
-      "vatRate": "0.19",
+      "vatRate": "0.075",
       "billingFrequencyMonths": 1,
       "priceBreakdown": {
-        "finalPrice": "25.00",
-        "basePrice": "21.01",
-        "vatAmount": "3.99"
+        "finalPrice": "26875.00",
+        "basePrice": "25000.00",
+        "vatAmount": "1875.00"
       },
-      "country": "DE"
+      "country": "NG"
     },
     "2": {
       "planId": 2,
-      "vatRate": "0.19",
+      "vatRate": "0.075",
       "billingFrequencyMonths": 12,
       "priceBreakdown": {
-        "finalPrice": "250.00",
-        "basePrice": "210.08",
-        "vatAmount": "39.92"
+        "finalPrice": "268750.00",
+        "basePrice": "250000.00",
+        "vatAmount": "18750.00"
       },
-      "country": "DE"
+      "country": "NG"
     },
     "3": {
       "planId": 3,
-      "vatRate": "0.19",
+      "vatRate": "0.075",
       "billingFrequencyMonths": 1,
       "priceBreakdown": {
-        "finalPrice": "45.00",
-        "basePrice": "37.82",
-        "vatAmount": "7.18"
+        "finalPrice": "53750.00",
+        "basePrice": "50000.00",
+        "vatAmount": "3750.00"
       },
-      "country": "DE"
+      "country": "NG"
     },
     "4": {
       "planId": 4,
-      "vatRate": "0.19",
+      "vatRate": "0.075",
       "billingFrequencyMonths": 12,
       "priceBreakdown": {
-        "finalPrice": "450.00",
-        "basePrice": "378.15",
-        "vatAmount": "71.85"
+        "finalPrice": "537500.00",
+        "basePrice": "500000.00",
+        "vatAmount": "37500.00"
       },
-      "country": "DE"
+      "country": "NG"
     }
   }
 }

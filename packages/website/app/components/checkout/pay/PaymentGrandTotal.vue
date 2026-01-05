@@ -52,10 +52,10 @@ const finalAmount = computed<number>(() => {
           :loading="loading"
           class="w-20 h-6"
         >
-          {{ subtotal.toFixed(2) }} €
+          {{ subtotal.toFixed(2) }} ₦
         </RuiSkeletonLoader>
         <span v-else>
-          {{ subtotal.toFixed(2) }} €
+          {{ subtotal.toFixed(2) }} ₦
         </span>
       </div>
     </div>
@@ -74,10 +74,10 @@ const finalAmount = computed<number>(() => {
           :loading="loading"
           class="w-20 h-6"
         >
-          -{{ discountAmount.toFixed(2) }} €
+          -{{ discountAmount.toFixed(2) }} ₦
         </RuiSkeletonLoader>
         <span v-else>
-          -{{ discountAmount.toFixed(2) }} €
+          -{{ discountAmount.toFixed(2) }} ₦
         </span>
       </div>
     </div>
@@ -93,10 +93,10 @@ const finalAmount = computed<number>(() => {
           :loading="loading"
           class="w-20 h-7"
         >
-          {{ finalAmount.toFixed(2) }} €
+          {{ finalAmount.toFixed(2) }} ₦
         </RuiSkeletonLoader>
         <span v-else>
-          {{ finalAmount.toFixed(2) }} €
+          {{ finalAmount.toFixed(2) }} ₦
         </span>
       </div>
     </div>

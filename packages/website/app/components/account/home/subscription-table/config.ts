@@ -24,7 +24,7 @@ export function getSubscriptionTableHeaders(t: ComposerTranslation): DataTableCo
     align: 'end',
     key: 'nextBillingAmount',
     label: t('account.subscriptions.headers.cost_in_symbol_per_period', {
-      symbol: '€',
+      symbol: '₦',
     }),
     sortable: true,
   }, {

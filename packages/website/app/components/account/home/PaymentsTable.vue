@@ -151,7 +151,7 @@ watch(() => props.pending, (pendingIs, pendingWas) => {
               </template>
             </i18n-t>
           </RuiTooltip>
-          {{ row.eurAmount }} €
+          {{ row.eurAmount }} ₦
         </div>
       </template>
       <template #item.paidUsing="{ row }">

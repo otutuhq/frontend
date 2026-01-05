@@ -47,13 +47,13 @@ const savings = computed<number>(() => {
       <!-- Original price -->
       <div class="flex justify-between text-sm text-gray-600">
         <span>Subtotal:</span>
-        <span class="line-through">{{ originalPrice.toFixed(2) }} €</span>
+        <span class="line-through">{{ originalPrice.toFixed(2) }} ₦</span>
       </div>
 
       <!-- Discount amount -->
       <div class="flex justify-between text-sm text-green-600">
         <span>Discount:</span>
-        <span>-{{ savings.toFixed(2) }} €</span>
+        <span>-{{ savings.toFixed(2) }} ₦</span>
       </div>
     </div>
 
@@ -63,7 +63,7 @@ const savings = computed<number>(() => {
         Grand Total:
       </span>
       <div class="text-xl font-bold text-gray-900 underline">
-        {{ grandTotal.toFixed(2) }} €
+        {{ grandTotal.toFixed(2) }} ₦
       </div>
     </div>
 

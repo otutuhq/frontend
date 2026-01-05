@@ -247,7 +247,7 @@ watch(value, () => {
           </div>
           <div class="text-sm font-semibold text-green-700">
             <template v-if="isValidDiscount(discountInfo)">
-              You save {{ discountInfo.discountedAmount }} €
+              You save {{ discountInfo.discountedAmount }} ₦
               <template v-if="appliedDiscountAmount">
                 ({{ appliedDiscountAmount }})
               </template>

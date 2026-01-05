@@ -13,11 +13,11 @@ mockNuxtImport('useRuntimeConfig', () => () => {
       backendUrl: BACKEND_URL,
       baseUrl: BACKEND_URL,
       contact: {
-        discord: 'https://discord.rotki.com',
-        email: 'info@rotki.com',
-        emailMailto: 'mailto:info@rotki.com',
+        discord: 'https://discord.otutu.co',
+        email: 'info@otutu.co',
+        emailMailto: 'mailto:info@otutu.co',
         github: 'https://github.com/rotki',
-        twitter: 'https://twitter.com/rotkiapp',
+        twitter: 'https://twitter.com/otutuhq',
       },
       i18n: {
         defaultLocale: 'en',
