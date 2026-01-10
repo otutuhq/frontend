@@ -86,6 +86,11 @@ const baseMenus: (Menu | MenuParent)[] = [
       },
     ],
   },
+  {
+    label: 'Talk to Us',
+    to: 'https://calendly.com/otutu/30min',
+    external: true,
+  },
 ];
 
 const sponsorMenu: Menu = {

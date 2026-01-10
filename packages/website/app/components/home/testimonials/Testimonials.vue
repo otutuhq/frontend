@@ -8,6 +8,10 @@ const { data: testimonials } = await useAsyncData('testimonials', () => fallback
   async () => await queryCollection('testimonialsLocal').all(),
 ));
 
+const visibleTestimonials = computed(() =>
+  testimonials.value?.filter(testimonial => testimonial.visible) || [],
+);
+
 const { t } = useI18n({ useScope: 'global' });
 </script>
 
@@ -21,8 +25,8 @@ const { t } = useI18n({ useScope: 'global' });
         {{ t('home.testimonials.detail') }}
       </div>
       <TestimonialCarousel
-        v-if="testimonials"
-        :testimonials="testimonials"
+        v-if="visibleTestimonials.length > 0"
+        :testimonials="visibleTestimonials"
       />
     </div>
   </div>

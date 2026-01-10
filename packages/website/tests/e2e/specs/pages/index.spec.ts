@@ -63,7 +63,7 @@ test.describe('homepage', () => {
     await page.goto('/', { waitUntil: 'networkidle' });
 
     await expect(
-      page.getByRole('button', { name: 'Download rotki for free' }).first(),
+      page.getByRole('button', { name: 'Talk to Us' }).first(),
     ).toBeVisible();
 
     // Wait for the pricing section to load (it's wrapped in ClientOnly)

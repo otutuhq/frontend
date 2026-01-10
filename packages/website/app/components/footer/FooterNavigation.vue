@@ -73,6 +73,11 @@ const menus: MenuGroup[] = [
         to: 'https://otutu.substack.com/',
         external: true,
       },
+      {
+        label: 'Talk to Us',
+        to: 'https://calendly.com/otutu/30min',
+        external: true,
+      },
     ],
   },
   {

@@ -14,19 +14,19 @@ import Testimonials from '~/components/home/testimonials/Testimonials.vue';
 import { commonAttrs, getMetadata } from '~/utils/metadata';
 
 const description
-  = 'rotki is an open source portfolio tracker, accounting and analytics tool that protects your privacy.';
+  = 'Otutu is a powerful modern accounting platform with full double-entry accrual accounting, built for professional financial management.';
 
-const keywords = `portfolio,portfolio-tracking,cryptocurrency-portfolio-tracker,cryptocurrency,bitcoin,ethereum,
-privacy,opensource,accounting,asset-management,taxes,tax-reporting`;
+const keywords = `accounting,financial-management,double-entry-accounting,bookkeeping,business-finance,
+invoicing,payables,receivables,financial-reporting,tax-compliance,professional-accounting`;
 
 useHead({
-  title: 'rotki',
+  title: 'Otutu',
   meta: [
     {
       name: 'keywords',
       content: keywords,
     },
-    ...getMetadata('rotki', description, ''),
+    ...getMetadata('Otutu', description, ''),
   ],
   ...commonAttrs(),
 });

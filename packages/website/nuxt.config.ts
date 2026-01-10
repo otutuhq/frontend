@@ -47,6 +47,10 @@ const nonIndexed = [
   '/_nuxt/**',
   '/testimonials/**',
   '/oauth/**',
+  // Disabled pages - not shown in navigation
+  '/integrations',
+  '/download',
+  '/impressum',
   ...(!sponsorshipEnabled ? sponsorRoutes : []),
 ];
 
@@ -127,8 +131,8 @@ export default defineNuxtConfig({
         { content: '#00aba9', name: 'msapplication-TileColor' },
         { content: '#ffffff', name: 'theme-color' },
       ],
-      title: 'rotki.com',
-      titleTemplate: '%s | rotki',
+      title: 'otutu.co',
+      titleTemplate: '%s | Otutu',
     },
   },
 
@@ -503,7 +507,7 @@ export default defineNuxtConfig({
   },
 
   site: {
-    url: 'https://rotki.com',
+    url: 'https://otutu.co',
   },
 
   sitemap: {
