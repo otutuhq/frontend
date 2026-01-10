@@ -1,54 +1,5 @@
 <script setup lang="ts">
-import type { IntegrationItem } from '~/types/integrations';
-import { get } from '@vueuse/core';
-import { useIntegrationsData } from '~/composables/use-integrations-data';
-
 const { t } = useI18n({ useScope: 'global' });
-
-// Sorted by TVL, source: Defillama
-const biggestProtocols: string[] = [
-  'ETH2',
-  'Lido eth',
-  'Aave',
-  'EigenLayer',
-  'Uniswap',
-  'Morpho',
-  'Base',
-  'Arbitrum One',
-  'Hyperliquid',
-  'Makerdao DSR',
-  'Spark',
-  'Compound',
-  'Optimism',
-  'Convex',
-  'Polygon',
-  'Aerodrome Finance',
-  'GMX',
-  'Echo',
-  'Aura Finance',
-  'Defisaver',
-  'Locked GNO',
-  'FRAX',
-  'Liquity',
-  'Yearn Governance',
-  'Puffer',
-  'ZkSync',
-  'Extrafi',
-  'Metamask swaps',
-  'Velodrome finance',
-  'Cowswap',
-  'Gearbox',
-  'Juicebox',
-  'Umami',
-  'Pickle Finance',
-  '1inch',
-  'Kyber',
-];
-
-const { data: integrationData } = useIntegrationsData();
-
-const protocolsData = computed<IntegrationItem[]>(() =>
-  biggestProtocols.map(protocolName => get(integrationData).protocols.find(data => data.label === protocolName)).filter(item => !!item));
 
 const features = [
   {
@@ -98,28 +49,17 @@ const features = [
         </ul>
       </div>
     </div>
-    <div class="flex-1 rounded-xl bg-rui-primary/[0.1] py-4 sm:py-8 px-4 sm:px-6 grid grid-cols-5 min-[400px]:grid-cols-7 lg:grid-cols-5 xl:grid-cols-7 gap-2 sm:gap-4 justify-between">
-      <RuiTooltip
-        v-for="item in protocolsData"
-        :key="item.label"
-        :open-delay="200"
-      >
-        <template #activator>
-          <div
-            class="w-full h-full bg-white rounded-lg p-1 min-[400px]:p-2 flex items-center justify-center border border-rui-grey-300 aspect-square"
-          >
-            <NuxtImg
-              :src="item.image"
-              :alt="item.label"
-              width="48"
-              height="48"
-              loading="lazy"
-              class="w-full h-full"
-            />
-          </div>
-        </template>
-        {{ item.label }}
-      </RuiTooltip>
+
+    <div class="flex-1">
+      <NuxtImg
+        class="rounded-xl overflow-hidden"
+        :alt="t('home.evm_protocols.title')"
+        src="/img/dashboard copy.webp"
+        format="webp"
+        loading="lazy"
+        width="654"
+        height="523"
+      />
     </div>
   </div>
 </template>

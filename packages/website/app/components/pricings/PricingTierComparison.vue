@@ -123,9 +123,7 @@ function isFeatureFlag(label: string, descriptionMap: FeatureDescriptionMap): bo
 
 function getFeatureValue(plan: PlanBase, label: string, descriptionMap: FeatureDescriptionMap): FeatureValue {
   if (isCustomPlan(plan)) {
-    if (label.toLowerCase().includes('support')) {
-      return t('pricing.custom_plan_bespoke_support');
-    }
+    // For custom plans, show checkmarks for boolean features and negotiable for others
     if (isFeatureFlag(label, descriptionMap)) {
       return true;
     }

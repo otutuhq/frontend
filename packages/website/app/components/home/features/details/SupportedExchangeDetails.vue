@@ -47,13 +47,13 @@ const { t } = useI18n({ useScope: 'global' });
 
     <div class="flex-1">
       <NuxtImg
-        class="overflow-hidden"
+        class="rounded-xl overflow-hidden"
         :alt="t('home.exchanges.title')"
-        src="/img/exchanges.png"
+        src="/img/history_events copy.webp"
         format="webp"
         loading="lazy"
-        width="795"
-        height="428"
+        width="654"
+        height="523"
       />
     </div>
   </div>

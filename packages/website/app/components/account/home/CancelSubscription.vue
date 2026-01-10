@@ -57,7 +57,7 @@ const { t } = useI18n({ useScope: 'global' });
                       color="primary"
                       external
                       inline
-                      to="https://github.com/rotki/rotki/issues"
+                      to="https://github.com/otutuhq/"
                     >
                       {{ t('account.subscriptions.cancellation.bug_tracker') }}
                     </ButtonLink>

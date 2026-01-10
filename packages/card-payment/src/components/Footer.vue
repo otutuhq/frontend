@@ -2,7 +2,7 @@
 import { computed } from 'vue';
 
 const year = computed(() => new Date().getFullYear().toString());
-const copyright = computed(() => `© Rotki Solutions GmbH 2018-${year.value}.`);
+const copyright = computed(() => `© Otutu Group LTD 2019-${year.value}.`);
 </script>
 
 <template>

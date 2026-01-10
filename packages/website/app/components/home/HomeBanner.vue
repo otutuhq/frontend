@@ -23,12 +23,6 @@ const { t } = useI18n({ useScope: 'global' });
         rounded
         variant="default"
       >
-        <template #prepend>
-          <RuiIcon
-            size="20"
-            name="lu-download"
-          />
-        </template>
         {{ t('actions.download_for_free') }}
       </ButtonLink>
     </div>

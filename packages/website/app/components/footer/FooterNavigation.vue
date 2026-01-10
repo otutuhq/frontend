@@ -65,12 +65,12 @@ const menus: MenuGroup[] = [
     items: [
       {
         label: t('navigation_menu.documentation.title'),
-        to: 'https://docs.rotki.com',
+        to: 'https://otutu-group.gitbook.io/otutu-docs/',
         external: true,
       },
       {
         label: t('navigation_menu.blog.title'),
-        to: 'https://blog.rotki.com',
+        to: 'https://otutu.substack.com/',
         external: true,
       },
     ],
@@ -100,7 +100,7 @@ const menus: MenuGroup[] = [
       /*
       {
         label: t('navigation_menu.faq'),
-        to: 'https://docs.rotki.com/faq',
+        to: 'https://otutu-group.gitbook.io/otutu-docs/',
         external: true,
       },
       */

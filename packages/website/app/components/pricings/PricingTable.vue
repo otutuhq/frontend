@@ -17,9 +17,9 @@ const { t } = useI18n({ useScope: 'global' });
 
 <template>
   <div
-    class="grid relative"
+    class="grid relative max-w-full overflow-x-auto"
     :style="{
-      gridTemplateColumns: `minmax(195px, 250px) repeat(${plans.length}, minmax(195px, 1fr))`,
+      gridTemplateColumns: `minmax(160px, 200px) repeat(${plans.length}, minmax(140px, 1fr))`,
     }"
   >
     <div />

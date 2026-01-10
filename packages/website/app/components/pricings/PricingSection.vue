@@ -29,7 +29,7 @@ const tiersInformation = computed(() => {
 <template>
   <div
     data-cy="pricing-section"
-    class="w-full flex flex-col gap-12 px-4 md:px-8 lg:px-12 xl:px-16 py-12 md:py-20"
+    class="w-full flex flex-col gap-12 px-4 md:px-6 lg:px-8 xl:px-12 py-12 md:py-20 max-w-7xl mx-auto"
   >
     <!-- Critical optimization: Wrap in ClientOnly to prevent SSR hydration blocking -->
     <ClientOnly>

@@ -36,7 +36,7 @@ definePageMeta({
         <NuxtImg
           class="max-w-[384px] overflow-hidden h-full object-contain"
           :alt="t('home.exchanges.title')"
-          src="/img/exchanges.png"
+          src="/img/history_events copy.webp"
           format="webp"
           loading="lazy"
           width="384"

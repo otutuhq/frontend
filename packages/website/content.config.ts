@@ -12,7 +12,7 @@ function getSource(path: string, dataOrigin: 'remote' | 'local'): CollectionSour
     return {
       include: path,
       prefix: path.split('/')[1],
-      repository: 'https://github.com/rotki/rotki.com',
+      repository: 'https://github.com/otutuhq',
     };
   }
   else {

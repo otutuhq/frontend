@@ -1,41 +1,26 @@
 {
   "availablePlans": {
-    "settings": {
-      "country": "NG",
-      "isAuthenticated": false
-    },
+    "settings": { "country": "NG", "isAuthenticated": false },
     "tiers": [
-      {
-        "isMostPopular": true,
-        "isCustom": false,
-        "monthlyPlan": {
-          "planId": 1,
-          "price": "25000.00"
-        },
-        "tierName": "Basic",
-        "yearlyPlan": {
-          "planId": 2,
-          "price": "250000.00"
-        }
-      },
       {
         "isMostPopular": false,
         "isCustom": false,
-        "monthlyPlan": {
-          "planId": 3,
-          "price": "50000.00"
-        },
+        "monthlyPlan": { "planId": 1, "price": "25000.00" },
+        "tierName": "Basic",
+        "yearlyPlan": { "planId": 2, "price": "250000.00" }
+      },
+      {
+        "isMostPopular": true,
+        "isCustom": false,
+        "monthlyPlan": { "planId": 3, "price": "50000.00" },
         "tierName": "Advanced",
-        "yearlyPlan": {
-          "planId": 4,
-          "price": "500000.00"
-        }
+        "yearlyPlan": { "planId": 4, "price": "500000.00" }
       },
       {
         "isMostPopular": false,
         "isCustom": true,
         "monthlyPlan": null,
-        "tierName": "Custom",
+        "tierName": "Enterprise",
         "yearlyPlan": null
       }
     ]
@@ -43,146 +28,119 @@
   "premiumTiersInfo": [
     {
       "description": [
-        {
-          "label": "Historical events limit",
-          "value": "30K events"
-        },
-        {
-          "label": "Encrypted data backups",
-          "value": "Store up to 600MB"
-        },
-        {
-          "label": "Device limit",
-          "value": "Connect and sync up to 4 devices"
-        },
-        {
-          "label": "Support",
-          "value": "Standard"
-        },
-        {
-          "label": "Track ETH Staking",
-          "value": "up to 384 ETH"
-        },
-        {
-          "label": "Detailed graphs",
-          "value": "Staking Insights"
-        },
-        {
-          "label": "Event analysis",
-          "value": true
-        }
+        { "label": "Users per Company", "value": "Up to 50 users" },
+        { "label": "Multi-Company Support", "value": "Up to 10 companies" },
+        { "label": "Double-Entry Accounting", "value": true },
+        { "label": "Transaction Management", "value": "Up to 1,000 / month" },
+        { "label": "Financial Events History", "value": "Standard history" },
+        { "label": "Sales (Invoices & Estimates)", "value": true },
+        { "label": "Recurring Invoices", "value": true },
+        { "label": "Purchases & Bills", "value": true },
+        { "label": "Bank Accounts & Feeds", "value": "Up to 5 accounts" },
+        { "label": "Reports & Statements", "value": "Core reports" },
+        { "label": "Analytics & Insights", "value": "Basic" },
+        { "label": "Encrypted Data Backups", "value": true },
+        { "label": "API Access", "value": false },
+        { "label": "Customization", "value": false },
+        { "label": "Support Level", "value": "Standard" }
       ],
       "limits": {
-        "historical_events_limit": 30000,
-        "encrypted_data_backups": 600,
-        "device_limit": 4,
-        "support_level": 1,
-        "eth_staking_limit": 384,
-        "detailed_graphs": true,
-        "event_analysis": true
+        "users_per_company": "Up to 50 users",
+        "multi_company_support": "Up to 10 companies",
+        "double_entry_accounting": true,
+        "transaction_management": "Up to 1,000 / month",
+        "financial_events_history": "Standard history",
+        "sales_invoices_estimates": true,
+        "recurring_invoices": true,
+        "purchases_bills": true,
+        "bank_accounts_feeds": "Up to 5 accounts",
+        "reports_statements": "Core reports",
+        "analytics_insights": "Basic",
+        "encrypted_data_backups": true,
+        "api_access": false,
+        "customization": false,
+        "support_level": "Standard"
       },
-      "monthlyPlan": {
-        "id": 1,
-        "price": "25000.00"
-      },
+      "monthlyPlan": { "id": 1, "price": "25000.00" },
       "name": "Basic",
-      "yearlyPlan": {
-        "id": 2,
-        "price": "250000.00"
-      }
+      "yearlyPlan": { "id": 2, "price": "250000.00" }
     },
     {
       "description": [
-        {
-          "label": "Historical events limit",
-          "value": "100K events"
-        },
-        {
-          "label": "Encrypted data backups",
-          "value": "Negotiable"
-        },
-        {
-          "label": "Device limit",
-          "value": "Negotiable"
-        },
-        {
-          "label": "Support",
-          "value": "Bespoke & Customization assistance"
-        },
-        {
-          "label": "Track ETH Staking",
-          "value": "Negotiable"
-        },
-        {
-          "label": "Detailed graphs",
-          "value": "Staking Insights"
-        },
-        {
-          "label": "Event analysis",
-          "value": true
-        }
+        { "label": "Users per Company", "value": "Up to 100 users" },
+        { "label": "Multi-Company Support", "value": "Up to 10 companies" },
+        { "label": "Double-Entry Accounting", "value": true },
+        { "label": "Transaction Management", "value": "Higher limits" },
+        { "label": "Financial Events History", "value": "Extended history" },
+        { "label": "Sales (Invoices & Estimates)", "value": true },
+        { "label": "Recurring Invoices", "value": true },
+        { "label": "Purchases & Bills", "value": true },
+        { "label": "Bank Accounts & Feeds", "value": "Higher limits" },
+        { "label": "Reports & Statements", "value": "Advanced reports" },
+        { "label": "Analytics & Insights", "value": "Advanced" },
+        { "label": "Encrypted Data Backups", "value": true },
+        { "label": "API Access", "value": false },
+        { "label": "Customization", "value": "Limited" },
+        { "label": "Support Level", "value": "Priority" }
       ],
       "limits": {
-        "historical_events_limit": 100000,
-        "encrypted_data_backups": -1,
-        "device_limit": -1,
-        "support_level": 2,
-        "eth_staking_limit": -1,
-        "detailed_graphs": true,
-        "event_analysis": true
+        "users_per_company": "Up to 100 users",
+        "multi_company_support": "Up to 10 companies",
+        "double_entry_accounting": true,
+        "transaction_management": "Higher limits",
+        "financial_events_history": "Extended history",
+        "sales_invoices_estimates": true,
+        "recurring_invoices": true,
+        "purchases_bills": true,
+        "bank_accounts_feeds": "Higher limits",
+        "reports_statements": "Advanced reports",
+        "analytics_insights": "Advanced",
+        "encrypted_data_backups": true,
+        "api_access": false,
+        "customization": "Limited",
+        "support_level": "Priority"
       },
-      "monthlyPlan": {
-        "id": 3,
-        "price": "50000.00"
-      },
+      "monthlyPlan": { "id": 3, "price": "50000.00" },
       "name": "Advanced",
-      "yearlyPlan": {
-        "id": 4,
-        "price": "500000.00"
-      }
+      "yearlyPlan": { "id": 4, "price": "500000.00" }
     },
     {
       "description": [
-        {
-          "label": "Historical events limit",
-          "value": "Negotiable"
-        },
-        {
-          "label": "Encrypted data backups",
-          "value": "Negotiable"
-        },
-        {
-          "label": "Device limit",
-          "value": "Negotiable"
-        },
-        {
-          "label": "Support",
-          "value": "Bespoke & Customization assistance"
-        },
-        {
-          "label": "Track ETH Staking",
-          "value": "Negotiable"
-        },
-        {
-          "label": "Detailed graphs",
-          "value": "Staking Insights"
-        },
-        {
-          "label": "Event analysis",
-          "value": true
-        }
+        { "label": "Users per Company", "value": "Custom / Unlimited" },
+        { "label": "Multi-Company Support", "value": "Custom" },
+        { "label": "Double-Entry Accounting", "value": true },
+        { "label": "Transaction Management", "value": "Unlimited" },
+        { "label": "Financial Events History", "value": "Unlimited" },
+        { "label": "Sales (Invoices & Estimates)", "value": true },
+        { "label": "Recurring Invoices", "value": true },
+        { "label": "Purchases & Bills", "value": true },
+        { "label": "Bank Accounts & Feeds", "value": "Custom" },
+        { "label": "Reports & Statements", "value": "Custom reports" },
+        { "label": "Analytics & Insights", "value": "Bespoke" },
+        { "label": "Encrypted Data Backups", "value": true },
+        { "label": "API Access", "value": true },
+        { "label": "Customization", "value": "Full" },
+        { "label": "Support Level", "value": "Dedicated Manager" }
       ],
       "limits": {
-        "historical_events_limit": -1,
-        "encrypted_data_backups": -1,
-        "device_limit": -1,
-        "support_level": 2,
-        "eth_staking_limit": -1,
-        "detailed_graphs": true,
-        "event_analysis": true
+        "users_per_company": "Custom / Unlimited",
+        "multi_company_support": "Custom",
+        "double_entry_accounting": true,
+        "transaction_management": "Unlimited",
+        "financial_events_history": "Unlimited",
+        "sales_invoices_estimates": true,
+        "recurring_invoices": true,
+        "purchases_bills": true,
+        "bank_accounts_feeds": "Custom",
+        "reports_statements": "Custom reports",
+        "analytics_insights": "Bespoke",
+        "encrypted_data_backups": true,
+        "api_access": true,
+        "customization": "Full",
+        "support_level": "Dedicated Manager"
       },
       "monthlyPlan": null,
-      "name": "Custom",
+      "name": "Enterprise",
       "yearlyPlan": null
     }
   ],

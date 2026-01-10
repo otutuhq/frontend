@@ -75,13 +75,13 @@ const baseMenus: (Menu | MenuParent)[] = [
       {
         label: t('navigation_menu.documentation.title'),
         description: t('navigation_menu.documentation.description'),
-        to: 'https://docs.rotki.com',
+        to: 'https://otutu-group.gitbook.io/otutu-docs/',
         external: true,
       },
       {
         label: t('navigation_menu.blog.title'),
         description: t('navigation_menu.blog.description'),
-        to: 'https://blog.rotki.com',
+        to: 'https://otutu.substack.com/',
         external: true,
       },
     ],

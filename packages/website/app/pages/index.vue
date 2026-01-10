@@ -1,12 +1,16 @@
 <script setup lang="ts">
 import { defineAsyncComponent } from 'vue';
-import DynamicMessageDisplay from '~/components/home/DynamicMessageDisplay.vue';
+
+// import DynamicMessageDisplay from '~/components/home/DynamicMessageDisplay.vue';
+
 import FeatureList from '~/components/home/features/FeatureList.vue';
 import FeaturesSection from '~/components/home/FeaturesSection.vue';
 import HomeBanner from '~/components/home/HomeBanner.vue';
 import PremiumFeatures from '~/components/home/PremiumFeatures.vue';
 import Testimonials from '~/components/home/testimonials/Testimonials.vue';
-import { useDynamicMessages } from '~/composables/use-dynamic-messages';
+
+// import { useDynamicMessages } from '~/composables/use-dynamic-messages';
+
 import { commonAttrs, getMetadata } from '~/utils/metadata';
 
 const description
@@ -27,9 +31,10 @@ useHead({
   ...commonAttrs(),
 });
 
-const { fetchMessages, activeDashboardMessages } = useDynamicMessages();
+// const { fetchMessages, activeDashboardMessages } = useDynamicMessages();
 
 // Critical optimization: Use requestIdleCallback for non-blocking data fetching
+/*
 onBeforeMount(() => {
   if ('requestIdleCallback' in window) {
     (window as any).requestIdleCallback(() => {
@@ -43,6 +48,7 @@ onBeforeMount(() => {
     }, 0);
   }
 });
+*/
 
 definePageMeta({
   layout: 'landing',
@@ -54,12 +60,14 @@ const PricingSection = defineAsyncComponent(() => import('~/components/pricings/
 
 <template>
   <!-- Critical optimization: Lazy load heavy components -->
+  <!--
   <ClientOnly>
     <DynamicMessageDisplay
       v-if="activeDashboardMessages.length > 0"
       :messages="activeDashboardMessages"
     />
   </ClientOnly>
+  -->
 
   <!-- Critical optimization: Load above-the-fold content first -->
   <HomeBanner />

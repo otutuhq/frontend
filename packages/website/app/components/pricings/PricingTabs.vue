@@ -48,7 +48,7 @@ const tab = ref(props.plans[0]?.name ?? '');
         :value="plan.name"
       >
         <div class="flex flex-col">
-          <div class="px-4 py-6 xl:px-6 xl:py-10 flex flex-col justify-between flex-1">
+          <div class="px-3 py-4 md:px-4 md:py-6 xl:px-6 xl:py-10 flex flex-col justify-between flex-1">
             <div class="flex flex-col gap-2 mb-6">
               <div class="text-h6 text-rui-primary">
                 {{ plan.displayedName }}

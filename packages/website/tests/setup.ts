@@ -16,7 +16,7 @@ mockNuxtImport('useRuntimeConfig', () => () => {
         discord: 'https://discord.otutu.co',
         email: 'info@otutu.co',
         emailMailto: 'mailto:info@otutu.co',
-        github: 'https://github.com/rotki',
+        github: 'https://github.com/otutuhq',
         twitter: 'https://twitter.com/otutuhq',
       },
       i18n: {

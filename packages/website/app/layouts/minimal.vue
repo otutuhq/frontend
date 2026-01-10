@@ -4,7 +4,7 @@ import { useI18n } from 'vue-i18n';
 const { t } = useI18n({ useScope: 'global' });
 
 const year = new Date().getFullYear().toString();
-const copyright = `© Rotki Solutions GmbH 2018-${year}.`;
+const copyright = `© Otutu Group LTD 2019-${year}.`;
 </script>
 
 <template>

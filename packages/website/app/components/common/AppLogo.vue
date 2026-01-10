@@ -1,6 +1,4 @@
 <script setup lang="ts">
-import { useStagingBranding } from '~/composables/use-staging-branding';
-
 defineOptions({
   inheritAttrs: false,
 });
@@ -34,20 +32,15 @@ function getSizeInPixels(): number {
   return num * 16; // Default to rem conversion
 }
 
-const { isStaging } = useStagingBranding();
-const branch = useRuntimeConfig().public.testing ? 'develop' : 'main';
-const name = 'rotki';
+const name = 'OTUTU';
 </script>
 
 <template>
-  <!-- Staging logo: SSR-safe, renders on both server and client -->
-  <div
-    v-if="isStaging"
-    class="gap-x-4 flex items-center relative"
-  >
+  <!-- Unified logo for both staging and production -->
+  <div class="flex items-center gap-x-2">
     <img
-      src="/staging/logo.svg"
-      alt="rotki staging"
+      src="/img/single-logo.svg"
+      :alt="text ? name : `${name} logo`"
       :width="getSizeInPixels()"
       :height="getSizeInPixels()"
       :style="{ width: `${getSizeInPixels()}px`, height: `${getSizeInPixels()}px` }"
@@ -60,22 +53,4 @@ const name = 'rotki';
       {{ name }}
     </div>
   </div>
-  <!-- Production logo: uses ClientOnly due to RuiLogo hydration requirements -->
-  <ClientOnly v-else>
-    <RuiLogo
-      :text="text"
-      :branch="branch"
-      logo="website"
-      :size="size"
-      v-bind="$attrs"
-    />
-    <template #fallback>
-      <RuiLogo
-        class="opacity-0 invisible transition delay-1000"
-        :text="text"
-        :size="size"
-        v-bind="$attrs"
-      />
-    </template>
-  </ClientOnly>
 </template>

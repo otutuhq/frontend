@@ -2,7 +2,7 @@ import type { GithubRelease } from '~/types/github';
 import { get, set } from '@vueuse/core';
 import { useLogger } from '~/utils/use-logger';
 
-export function useAppDownload(fallbackUrl = 'https://github.com/rotki/rotki/releases/latest') {
+export function useAppDownload(fallbackUrl = 'https://github.com/otutuhq') {
   const version = ref<string>('');
   const linuxUrl = ref<string>(fallbackUrl);
   const macOSUrl = ref<string>(fallbackUrl);

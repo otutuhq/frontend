@@ -36,7 +36,7 @@ const contacts: { title: string; description: string; href: string; icon: RuiIco
     description: t('values.contact_section.github.description'),
     href: github,
     icon: 'lu-github',
-    linkLabel: 'Rotki Solutions GmbH',
+    linkLabel: 'github.com/OtutuHQ',
   },
 ];
 </script>
