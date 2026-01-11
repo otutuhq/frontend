@@ -10,7 +10,8 @@ export function useRemoteOrLocal(): UseRemoteOrLocalReturn {
   const { public: { isDev } } = useRuntimeConfig();
 
   const fallbackToLocalOnError = async <T>(remote: Awaitable<T>, local: Awaitable<T>): Promise<T> => {
-    if (isDev) {
+    // Skip remote loading in production to avoid Vercel deployment issues
+    if (!isDev) {
       return local();
     }
 

@@ -15,15 +15,18 @@ const swiperInstance = ref<Swiper>();
 const swiperReady = ref<boolean>(false);
 const activeIndex = ref<number>(1);
 
-const images = ref<string[]>([]);
-
-function scanImages(): void {
-  const assetContext = import.meta.glob(
-    '~~/public/img/screenshots/*.(png|jpe?g|webp)',
-  );
-  const assetPaths = Object.keys(assetContext);
-  set(images, assetPaths);
-}
+const images = ref<string[]>([
+  '/img/screenshots/1.png',
+  '/img/screenshots/2.png',
+  '/img/screenshots/3.png',
+  '/img/screenshots/4.png',
+  '/img/screenshots/5.png',
+  '/img/screenshots/6.png',
+  '/img/screenshots/7.png',
+  '/img/screenshots/8.png',
+  '/img/screenshots/9.png',
+  '/img/screenshots/10.png',
+]);
 
 function onSwiperUpdate(s: Swiper): void {
   set(swiperInstance, s);
@@ -37,15 +40,6 @@ function onSwiperUpdate(s: Swiper): void {
 function getLoadingStrategy(index: number): 'eager' | 'lazy' {
   return index === 0 ? 'eager' : 'lazy';
 }
-
-/**
- * Returns fetch priority for images (first image gets high priority as it's the LCP element)
- */
-function getFetchPriority(index: number): 'high' | 'auto' {
-  return index === 0 ? 'high' : 'auto';
-}
-
-scanImages();
 </script>
 
 <template>
@@ -67,14 +61,11 @@ scanImages();
         :key="i"
         class="relative pt-[56.2%] bg-rui-grey-100"
       >
-        <NuxtImg
+        <img
           :src="image"
           alt=" "
-          format="webp"
           :loading="getLoadingStrategy(i)"
-          :fetchpriority="getFetchPriority(i)"
-          sizes="sm:100vw md:80vw lg:900px"
-          class="w-full absolute h-full top-0 left-0"
+          class="w-full absolute h-full top-0 left-0 object-cover"
         />
       </SwiperSlide>
     </Carousel>
