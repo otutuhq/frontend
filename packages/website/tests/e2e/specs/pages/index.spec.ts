@@ -72,7 +72,7 @@ test.describe('homepage', () => {
     ).toBeVisible({ timeout: 30000 });
 
     await expect(
-      page.getByRole('button', { name: 'Get Premium' }).first(),
+      page.getByRole('button', { name: 'Talk to Us' }).first(),
     ).toBeVisible();
   });
 });

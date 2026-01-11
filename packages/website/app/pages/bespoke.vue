@@ -123,7 +123,7 @@ const services = computed(() => [
       <div class="flex flex-col items-center space-y-4 dark">
         <ButtonLink
           external
-          to="https://calendly.com/rotki-lefteris/accounting-with-rotki"
+          to="https://calendly.com/otutu/30min"
           size="lg"
           variant="filled"
           rounded

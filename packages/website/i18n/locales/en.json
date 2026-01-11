@@ -286,18 +286,18 @@
     "edit": "Edit",
     "generate": "Generate",
     "get_plan": "Get {plan}",
-    "get_premium": "Get Premium",
+    "get_premium": "Talk to Us",
     "get_started": "Get started",
-    "get_started_for_free": "Get started for free",
+    "get_started_for_free": "Sign in to Otutu",
     "go_back_home": "Go back home",
     "regenerate": "Regenerate",
     "rename": "Rename",
     "renew": "Renew",
     "reset": "Reset",
     "save": "Save",
-    "sign_up": "Sign up",
+    "sign_up": "Talk to Us",
     "resume": "Resume",
-    "start_now_for_free": "Start now for free",
+    "start_now_for_free": "Sign in to Otutu",
     "submit": "Submit",
     "update": "Update",
     "upgrade": "Upgrade"
@@ -333,7 +333,7 @@
       "first_time_premium": "First time premium?",
       "forgot_password": "Forgot password?",
       "message": " Premium users unlock the full potential of rotki by removing all limits and unlocking all features.",
-      "sign_up_now": "Sign up now",
+      "sign_up_now": "Talk to Us",
       "title": "Sign in"
     },
     "password_changed": {
@@ -723,7 +723,7 @@
     },
     "rotki_offer": "What does {0} offer?",
     "testimonials": {
-      "detail": "Hear from some of our amazing customers who are using rotki.",
+      "detail": "Hear from some of our amazing customers who are using Otutu.",
       "title": "Don’t just take our word for it"
     },
     "otutu_features": {
@@ -775,10 +775,10 @@
     "title": "Connect your blockchains, connect your exchanges"
   },
   "jobs": {
-    "description": "Our mission is to empower users to take control of their finances both in and out of crypto in a transparent and auditable way while enabling them to own their data through a self-sovereign application.",
+    "description": "Our mission is to help businesses take full control of their finances through transparent, auditable accounting while ensuring they retain ownership of their financial data.",
     "header": "We’re looking for talented people",
     "no_open_roles": "There are no open roles.",
-    "title": "Careers at rotki",
+    "title": "Careers at Otutu",
     "role_unavailable": {
       "title": "Role unavailable",
       "description": "Thank you for your interest in the {title} role. This position is no longer available and we are not looking for new candidates for this role."
@@ -836,10 +836,10 @@
   },
   "page_footer": {
     "all_rights_reseved": "All Rights Reserved.",
-    "download": "Get the app"
+    "download": "Sign in to Otutu"
   },
   "page_header": {
-    "manage_premium": "Manage Premium"
+    "manage_premium": "Sign in to Otutu"
   },
   "logo": {
     "alt": "rotki logo"
@@ -965,7 +965,7 @@
       }
     },
     "footer": {
-      "description": "Upgrade to Otutu premium today and take your financial management to the next level. Enjoy enhanced features, greater flexibility, and exclusive perks designed for the modern investor."
+      "description": "Gain access to advanced financial reporting, compliant tax insights, seamless integrations, and greater control over your business finances—built for today’s businesses, founders, and finance teams who need clarity, accuracy, and confidence at scale."
     },
     "heading": "Unlock the Full Potential of Otutu with Premium Features",
     "title": "Complete Financial Operations in One Platform",

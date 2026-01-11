@@ -59,7 +59,7 @@ const { t } = useI18n({ useScope: 'global' });
             :value="sideColumn"
           />
           <ButtonLink
-            to="mailto:careers@rotki.com"
+            to="mailto:careers@otutu.co"
             external
             color="primary"
             variant="default"

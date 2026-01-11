@@ -31,7 +31,7 @@ import logoSmall from '/img/logo-small.svg';
             class="px-4 py-2 bg-rui-primary text-white rounded-full hover:bg-rui-primary-darker transition-colors text-sm font-medium shadow-sm"
             @click="navigation.goToSubscription"
           >
-            Manage Premium
+            Sign in to Otutu
           </button>
         </div>
       </div>
