@@ -4,4 +4,12 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Container styles now handled by Tailwind config custom plugin */
+/* Mobile-specific container overrides - only affects mobile, preserves desktop centering */
+@media (width <= 767px) {
+  .container {
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+    padding-left: 1rem !important;
+    padding-right: 1rem !important;
+  }
+}
