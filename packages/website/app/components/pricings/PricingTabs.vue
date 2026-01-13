@@ -10,6 +10,7 @@ const props = defineProps<{
   selectedPeriod: PricingPeriod;
   compact?: boolean;
   featuresLabel: string[];
+  showDiscountInfo?: boolean;
 }>();
 
 const { t } = useI18n({ useScope: 'global' });

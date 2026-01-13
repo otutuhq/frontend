@@ -150,6 +150,7 @@ function getFeatureValue(plan: PlanBase, label: string, descriptionMap: FeatureD
       :compact="false"
       :selected-period="selectedPeriod"
       :features-label="displayedFeaturesLabel"
+      :show-discount-info="false"
     />
     <div class="flex justify-center mt-8">
       <RuiButton

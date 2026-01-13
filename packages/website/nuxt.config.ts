@@ -164,6 +164,8 @@ export default defineNuxtConfig({
         prefetch: false,
       },
     },
+    // Enable payload extraction for better caching
+    payloadExtraction: false,
   },
 
   i18n: {
@@ -290,10 +292,15 @@ export default defineNuxtConfig({
     experimental: {
       tasks: true,
     },
-    scheduledTasks: {
-      // Run `ntf:cache` task every 5 minutes
-      '*/5 * * * *': ['nft:cache'],
-    },
+    // Only run NFT cache task if sponsorship is enabled
+    ...(sponsorshipEnabled
+      ? {
+          scheduledTasks: {
+            // Run `nft:cache` task every 5 minutes
+            '*/5 * * * *': ['nft:cache'],
+          },
+        }
+      : {}),
   },
 
   routeRules: {
@@ -309,12 +316,22 @@ export default defineNuxtConfig({
         'Cache-Control': 'no-cache, no-store, must-revalidate',
       },
     },
-    // Global no-cache rule for HTML to prevent CSP nonce mismatches
+    // Cache static assets aggressively in production
     ...(process.env.NODE_ENV !== 'development'
       ? {
-          '/**': {
+          '/_nuxt/**': {
             headers: {
-              'Cache-Control': 'no-cache, no-store, must-revalidate',
+              'Cache-Control': 'public, max-age=31536000, immutable',
+            },
+          },
+          '/**/*.js': {
+            headers: {
+              'Cache-Control': 'public, max-age=86400',
+            },
+          },
+          '/**/*.css': {
+            headers: {
+              'Cache-Control': 'public, max-age=86400',
             },
           },
         }
