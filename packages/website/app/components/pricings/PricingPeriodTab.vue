@@ -7,7 +7,7 @@ const props = defineProps<{
   data: { monthlyPlan: { price: string } | null; yearlyPlan: { price: string } | null }[];
 }>();
 
-const maxSavedAnnually = computed(() => {
+const _maxSavedAnnually = computed(() => {
   if (props.data.length === 0)
     return 0;
 
@@ -56,9 +56,11 @@ const tabs = [
       </RuiTab>
     </RuiTabs>
 
+    <!-- Savings indicator removed for mobile responsiveness -->
+    <!--
     <div
       v-if="maxSavedAnnually"
-      class="hidden md:flex items-start gap-2 text-rui-primary font-medium whitespace-nowrap -mt-8 -ml-4 relative z-1"
+      class="flex items-start gap-2 text-rui-primary font-medium whitespace-nowrap -mt-8 -ml-4 relative z-1"
     >
       <img
         :alt="t('pricing.max_saved_annually', { months: maxSavedAnnually })"
@@ -70,5 +72,6 @@ const tabs = [
       />
       {{ t('pricing.max_saved_annually', { months: maxSavedAnnually }) }}
     </div>
+    -->
   </div>
 </template>
