@@ -15,17 +15,17 @@ const swiperInstance = ref<Swiper>();
 const swiperReady = ref<boolean>(false);
 const activeIndex = ref<number>(1);
 
-const images = ref<{ webp: string; png: string }[]>([
-  { webp: '/img/screenshots/1.webp', png: '/img/screenshots/1.png' },
-  { webp: '/img/screenshots/2.webp', png: '/img/screenshots/2.png' },
-  { webp: '/img/screenshots/3.webp', png: '/img/screenshots/3.png' },
-  { webp: '/img/screenshots/4.webp', png: '/img/screenshots/4.png' },
-  { webp: '/img/screenshots/5.webp', png: '/img/screenshots/5.png' },
-  { webp: '/img/screenshots/6.webp', png: '/img/screenshots/6.png' },
-  { webp: '/img/screenshots/7.webp', png: '/img/screenshots/7.png' },
-  { webp: '/img/screenshots/8.webp', png: '/img/screenshots/8.png' },
-  { webp: '/img/screenshots/9.webp', png: '/img/screenshots/9.png' },
-  { webp: '/img/screenshots/10.webp', png: '/img/screenshots/10.png' },
+const images = ref<string[]>([
+  '/img/screenshots/1.avif',
+  '/img/screenshots/2.avif',
+  '/img/screenshots/3.avif',
+  '/img/screenshots/4.avif',
+  '/img/screenshots/5.avif',
+  '/img/screenshots/6.avif',
+  '/img/screenshots/7.avif',
+  '/img/screenshots/8.avif',
+  '/img/screenshots/9.avif',
+  '/img/screenshots/10.avif',
 ]);
 
 function onSwiperUpdate(s: Swiper): void {
@@ -61,18 +61,12 @@ function getLoadingStrategy(index: number): 'eager' | 'lazy' {
         :key="i"
         class="relative pt-[56.2%] bg-rui-grey-100"
       >
-        <picture class="w-full absolute h-full top-0 left-0">
-          <source
-            :srcset="image.webp"
-            type="image/webp"
-          />
-          <img
-            :src="image.png"
-            alt="Otutu application screenshot"
-            :loading="getLoadingStrategy(i)"
-            class="w-full h-full object-cover"
-          />
-        </picture>
+        <img
+          :src="image"
+          alt="Otutu application screenshot"
+          :loading="getLoadingStrategy(i)"
+          class="w-full absolute h-full top-0 left-0 object-cover"
+        />
       </SwiperSlide>
     </Carousel>
     <div class="container relative !px-0">
