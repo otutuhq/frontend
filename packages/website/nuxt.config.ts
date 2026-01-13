@@ -503,6 +503,8 @@ export default defineNuxtConfig({
       walletConnect: {
         projectId: '',
       },
+      // Feature flag to disable heavy features for faster landing page
+      enableHeavyFeatures: process.env.ENABLE_HEAVY_FEATURES !== 'false',
     },
     redis: {
       host: '',
