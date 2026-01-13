@@ -5,13 +5,11 @@
   "packageManager": "pnpm@10.25.0",
   "type": "module",
   "scripts": {
-    "dev": "run-p dev:website dev:card",
+    "dev": "pnpm dev:website",
     "dev:website": "pnpm --filter @rotki/website dev",
-    "dev:card": "pnpm --filter @rotki/card-payment dev",
     "build": "pnpm build:website",
     "build:website": "pnpm --filter @rotki/website build",
-    "build:card": "pnpm --filter @rotki/card-payment build",
-    "build:copy": "mkdir -p packages/website/.output/public/checkout/pay/card && cp -r packages/card-payment/dist/* packages/website/.output/public/checkout/pay/card/ && rimraf .output && cp -r packages/website/.output .",
+
     "preview": "pnpm --filter @rotki/website preview",
     "clean": "rimraf node_modules && pnpm -r exec rimraf node_modules && pnpm store prune && pnpm i",
     "start": "pnpm --filter @rotki/website start",
