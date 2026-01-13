@@ -7,3 +7,11 @@
 .container {
   @apply px-0 md:px-12 xl:px-16;
 }
+
+/* Override container centering on mobile for full-width layout */
+@media (width <= 767px) {
+  .container {
+    margin-left: 0;
+    margin-right: 0;
+  }
+}
