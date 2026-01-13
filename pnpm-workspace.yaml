@@ -1,6 +1,6 @@
 packages:
   - .
-  - packages/website
+  - packages/*
   - packages/website/tests/e2e/mock-api
 
 catalog:
