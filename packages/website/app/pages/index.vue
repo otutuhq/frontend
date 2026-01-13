@@ -7,7 +7,6 @@ import FeatureList from '~/components/home/features/FeatureList.vue';
 import FeaturesSection from '~/components/home/FeaturesSection.vue';
 import HomeBanner from '~/components/home/HomeBanner.vue';
 import PremiumFeatures from '~/components/home/PremiumFeatures.vue';
-import Testimonials from '~/components/home/testimonials/Testimonials.vue';
 
 // import { useDynamicMessages } from '~/composables/use-dynamic-messages';
 
@@ -54,8 +53,9 @@ definePageMeta({
   layout: 'landing',
 });
 
-// Critical optimization: Lazy load heavy PricingSection component
+// Critical optimization: Lazy load heavy components
 const PricingSection = defineAsyncComponent(() => import('~/components/pricings/PricingSection.vue'));
+const Testimonials = defineAsyncComponent(() => import('~/components/home/testimonials/Testimonials.vue'));
 </script>
 
 <template>
@@ -75,7 +75,46 @@ const PricingSection = defineAsyncComponent(() => import('~/components/pricings/
   <ClientOnly>
     <FeaturesSection />
     <FeatureList />
-    <Testimonials />
+
+    <!-- Critical optimization: Lazy load testimonials with suspense -->
+    <Suspense>
+      <template #default>
+        <Testimonials />
+      </template>
+      <template #fallback>
+        <div class="py-20 w-full overflow-x-hidden bg-rui-primary-lighter/[0.04]">
+          <div class="container">
+            <div class="text-rui-text font-bold text-h4 mb-4">
+              {{ $t('home.testimonials.title') }}
+            </div>
+            <div class="text-rui-text-secondary mb-16">
+              {{ $t('home.testimonials.detail') }}
+            </div>
+            <!-- Testimonials skeleton -->
+            <div class="flex gap-6 overflow-hidden">
+              <div
+                v-for="i in 3"
+                :key="i"
+                class="flex-1 min-w-80 bg-white rounded-lg p-6 shadow-sm animate-pulse"
+              >
+                <div class="flex items-center gap-3 mb-4">
+                  <div class="w-12 h-12 bg-gray-200 rounded-full" />
+                  <div>
+                    <div class="h-4 bg-gray-200 rounded w-20 mb-2" />
+                    <div class="h-3 bg-gray-200 rounded w-16" />
+                  </div>
+                </div>
+                <div class="space-y-2">
+                  <div class="h-4 bg-gray-200 rounded" />
+                  <div class="h-4 bg-gray-200 rounded w-3/4" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </template>
+    </Suspense>
+
     <PremiumFeatures />
 
     <!-- Critical optimization: Lazy load pricing section with suspense -->
