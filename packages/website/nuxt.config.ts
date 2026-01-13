@@ -536,10 +536,41 @@ export default defineNuxtConfig({
       ],
       darkMode: 'class',
       mode: 'jit',
-      plugins: [rotkiTheme],
+      plugins: [
+        rotkiTheme,
+        // Custom plugin to disable container centering on mobile
+        function ({ addUtilities }: { addUtilities: any }) {
+          addUtilities({
+            '.container-mobile-full': {
+              '@apply w-full max-w-none px-0': {},
+              'margin-left': '0 !important',
+              'margin-right': '0 !important',
+            },
+            '.container-tablet-center': {
+              '@apply md:mx-auto md:px-12': {},
+            },
+            '.container-desktop-center': {
+              '@apply lg:px-16 xl:px-16': {},
+            },
+          });
+        },
+      ],
       theme: {
         container: {
-          center: true,
+          center: false, // Disable global centering
+          screens: {
+            sm: '640px',
+            md: '768px',
+            lg: '1024px',
+            xl: '1280px',
+          },
+          padding: {
+            DEFAULT: '0',
+            sm: '2rem',
+            md: '3rem',
+            lg: '3rem',
+            xl: '4rem',
+          },
         },
       },
     },
