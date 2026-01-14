@@ -48,8 +48,8 @@ const baseMenus: (Menu | MenuParent)[] = [
     ],
   },
   {
-    label: t('navigation_menu.values'),
-    to: '/values',
+    label: t('navigation_menu.about_us'),
+    to: '/about-us',
     highlightActive: true,
   },
   // Temporarily disabled - Integrations

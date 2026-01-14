@@ -54,8 +54,8 @@ const menus: MenuGroup[] = [
         highlightActive: true,
       },
       {
-        label: t('navigation_menu.values'),
-        to: '/values',
+        label: t('navigation_menu.about_us'),
+        to: '/about-us',
         highlightActive: true,
       },
     ],
