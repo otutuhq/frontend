@@ -1,47 +1,24 @@
 <script setup lang="ts">
-import type { RouteLocationRaw } from 'vue-router';
 import type { MappedPlan } from '~/components/pricings/type';
 import type { PricingPeriod } from '~/types/tiers';
-import { get } from '@vueuse/core';
 import ButtonLink from '~/components/common/ButtonLink.vue';
-import { isCustomPlan, isFreePlan } from '~/components/pricings/utils';
-import { useReferralCodeParam } from '~/composables/checkout/use-plan-params';
-import { buildQueryParams } from '~/utils/query';
+import { isFreePlan } from '~/components/pricings/utils';
 import { toTitleCase } from '~/utils/text';
 
-const props = defineProps<{
+defineProps<{
   plan: MappedPlan;
   selectedPeriod: PricingPeriod;
 }>();
 
-const {
-  public: {
-    contact: { emailMailto },
-  },
-} = useRuntimeConfig();
-
-const { referralCode } = useReferralCodeParam();
-
 const { t } = useI18n({ useScope: 'global' });
-
-const checkoutLink = computed<RouteLocationRaw>(() => {
-  const query = buildQueryParams({
-    planId: props.plan.id,
-    ref: get(referralCode),
-  });
-
-  return {
-    name: 'checkout-pay-method',
-    query,
-  };
-});
 </script>
 
 <template>
   <ButtonLink
     v-if="isFreePlan(plan)"
     class="w-full py-2 xl:text-[1rem]"
-    to="/download"
+    to="https://app.otutu.co/company/login"
+    external
     color="primary"
     variant="outlined"
   >
@@ -49,21 +26,12 @@ const checkoutLink = computed<RouteLocationRaw>(() => {
   </ButtonLink>
 
   <ButtonLink
-    v-else-if="isCustomPlan(plan)"
-    class="w-full py-2 xl:text-[1rem]"
-    color="primary"
-    variant="default"
-    :to="emailMailto"
-  >
-    {{ t('values.contact_section.title') }}
-  </ButtonLink>
-
-  <ButtonLink
     v-else
     class="w-full py-2 xl:text-[1rem]"
+    to="https://calendly.com/otutu/30min"
+    external
     variant="default"
     color="primary"
-    :to="checkoutLink"
   >
     {{ t('actions.get_plan', { plan: toTitleCase(plan.name) }) }}
   </ButtonLink>

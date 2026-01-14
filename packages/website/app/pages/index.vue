@@ -7,6 +7,7 @@ import FeatureList from '~/components/home/features/FeatureList.vue';
 import FeaturesSection from '~/components/home/FeaturesSection.vue';
 import HomeBanner from '~/components/home/HomeBanner.vue';
 import PremiumFeatures from '~/components/home/PremiumFeatures.vue';
+import ProductsFooter from '~/components/products/ProductsFooter.vue';
 
 // import { useDynamicMessages } from '~/composables/use-dynamic-messages';
 
@@ -109,4 +110,7 @@ const Testimonials = defineAsyncComponent(() => import('~/components/home/testim
       </template>
     </Suspense>
   </ClientOnly>
+
+  <!-- Products call-to-action footer -->
+  <ProductsFooter />
 </template>

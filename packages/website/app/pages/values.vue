@@ -1,4 +1,5 @@
 <script lang="ts" setup>
+import ProductsFooter from '~/components/products/ProductsFooter.vue';
 import ValueBody from '~/components/values/ValueBody.vue';
 import ValueContact from '~/components/values/ValueContact.vue';
 import ValueHeading from '~/components/values/ValueHeading.vue';
@@ -27,5 +28,8 @@ definePageMeta({
       </div>
     </div>
     <ValueContact />
+
+    <!-- Products call-to-action footer -->
+    <ProductsFooter />
   </div>
 </template>

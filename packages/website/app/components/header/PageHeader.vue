@@ -71,7 +71,11 @@ watch(
         <NavigationMenu class="grow w-full p-2 md:p-0 flex-col border-y border-rui-grey-200 md:w-auto md:flex-row md:border-y-0" />
 
         <div class="flex flex-col space-y-2 px-4 md:items-center md:flex-row md:space-y-0 md:space-x-2 md:px-0">
-          <NuxtLink to="/home/subscription">
+          <a
+            href="https://app.otutu.co/company/login"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             <RuiButton
               rounded
               color="primary"
@@ -79,7 +83,7 @@ watch(
             >
               {{ t('page_header.manage_premium') }}
             </RuiButton>
-          </NuxtLink>
+          </a>
           <RuiButton
             v-if="authenticated"
             title="Logout"

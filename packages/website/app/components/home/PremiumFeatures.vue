@@ -47,7 +47,8 @@ const data = computed<{ icon: RuiIcons; text: string; description: string }[]>((
           {{ t('home.premium_features.subtitle') }}
         </div>
         <ButtonLink
-          to="/products"
+          to="https://calendly.com/otutu/30min"
+          external
           variant="outlined"
           size="lg"
           class="mt-4"

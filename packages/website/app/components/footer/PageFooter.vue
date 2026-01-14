@@ -1,6 +1,5 @@
 <script setup lang="ts">
 import AppLogo from '~/components/common/AppLogo.vue';
-import ButtonLink from '~/components/common/ButtonLink.vue';
 import FooterIconLinks from '~/components/footer/FooterIconLinks.vue';
 import FooterNavigation from '~/components/footer/FooterNavigation.vue';
 
@@ -33,19 +32,6 @@ const copyright = computed<string>(() => `© Otutu Group LTD 2019-${year}.`);
           />
           <div class="flex-1 min-w-full xl:min-w-0 flex justify-center order-2 xl:order-1">
             <FooterNavigation class="w-full xl:max-w-[800px]" />
-          </div>
-          <div
-            class="order-1 xl:order-2 flex justify-end"
-          >
-            <ButtonLink
-              color="primary"
-              size="lg"
-              to="/download"
-              rounded
-              variant="filled"
-            >
-              {{ t('page_footer.download') }}
-            </ButtonLink>
           </div>
         </div>
       </div>

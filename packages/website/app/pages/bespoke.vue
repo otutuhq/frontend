@@ -1,5 +1,6 @@
 <script setup lang="ts">
 import ButtonLink from '~/components/common/ButtonLink.vue';
+import ProductsFooter from '~/components/products/ProductsFooter.vue';
 import { commonAttrs, getMetadata } from '~/utils/metadata';
 
 const {
@@ -214,4 +215,7 @@ const services = computed(() => [
       </RuiAlert>
     </div>
   </div>
+
+  <!-- Products call-to-action footer -->
+  <ProductsFooter />
 </template>

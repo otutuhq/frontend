@@ -131,10 +131,8 @@ const { t } = useI18n({ useScope: 'global' });
         {{ t('auth.login.first_time_premium') }}
       </span>
       <ButtonLink
-        :to="{
-          path: '/signup',
-          query: route.query,
-        }"
+        to="https://calendly.com/otutu/30min"
+        external
         inline
         color="primary"
       >

@@ -1,11 +1,6 @@
 <script setup lang="ts">
 import type { ContextColorsType } from '@rotki/ui-library';
-import type { RouteLocationRaw } from 'vue-router';
-import { get, isDefined } from '@vueuse/core';
-import { storeToRefs } from 'pinia';
 import ButtonLink from '~/components/common/ButtonLink.vue';
-import { useReferralCodeParam } from '~/composables/checkout/use-plan-params';
-import { useMainStore } from '~/store';
 
 withDefaults(
   defineProps<{
@@ -17,30 +12,6 @@ withDefaults(
   },
 );
 
-const store = useMainStore();
-const { account } = storeToRefs(store);
-
-const { referralCode } = useReferralCodeParam();
-
-const allowNavigation = computed<boolean>(() => {
-  if (!isDefined(account))
-    return true;
-
-  const { emailConfirmed } = get(account);
-  return emailConfirmed;
-});
-
-const checkoutLink = computed<RouteLocationRaw>(() => {
-  const ref = get(referralCode);
-  if (ref) {
-    return {
-      path: '/checkout/pay',
-      query: { ref },
-    };
-  }
-  return '/checkout/pay';
-});
-
 const { t } = useI18n({ useScope: 'global' });
 </script>
 
@@ -49,7 +20,8 @@ const { t } = useI18n({ useScope: 'global' });
     <ButtonLink
       v-if="!onlyPremium"
       variant="outlined"
-      to="/download"
+      to="https://app.otutu.co/company/login"
+      external
       size="lg"
       :color="color"
       :class="{ '!outline-white !text-rui-dark-text': !color }"
@@ -57,22 +29,14 @@ const { t } = useI18n({ useScope: 'global' });
       {{ t('actions.get_started_for_free') }}
     </ButtonLink>
 
-    <RuiTooltip
-      :disabled="allowNavigation"
-      tooltip-class="max-w-[20rem]"
+    <ButtonLink
+      to="https://calendly.com/otutu/30min"
+      external
+      size="lg"
+      variant="filled"
+      :color="color"
     >
-      <template #activator>
-        <ButtonLink
-          :to="checkoutLink"
-          size="lg"
-          variant="filled"
-          :disabled="!allowNavigation"
-          :color="color"
-        >
-          {{ t('actions.get_premium') }}
-        </ButtonLink>
-      </template>
-      {{ t('subscription.error.unverified_email') }}
-    </RuiTooltip>
+      {{ t('actions.get_premium') }}
+    </ButtonLink>
   </div>
 </template>

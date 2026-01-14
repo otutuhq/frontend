@@ -31,7 +31,7 @@ const features = [
       <NuxtImg
         class="rounded-xl overflow-hidden"
         :alt="t('home.history_events.title')"
-        src="/img/history_events.webp"
+        src="/img/3.webp"
         format="webp"
         loading="lazy"
         width="654"

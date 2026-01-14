@@ -152,14 +152,5 @@ function getFeatureValue(plan: PlanBase, label: string, descriptionMap: FeatureD
       :features-label="displayedFeaturesLabel"
       :show-discount-info="false"
     />
-    <div class="flex justify-center mt-8">
-      <RuiButton
-        color="primary"
-        size="lg"
-        @click="navigateTo('/signup')"
-      >
-        {{ t('actions.sign_up') }}
-      </RuiButton>
-    </div>
   </ClientOnly>
 </template>

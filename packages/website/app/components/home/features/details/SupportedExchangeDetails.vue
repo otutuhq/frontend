@@ -49,7 +49,7 @@ const { t } = useI18n({ useScope: 'global' });
       <NuxtImg
         class="rounded-xl overflow-hidden"
         :alt="t('home.exchanges.title')"
-        src="/img/history_events copy.webp"
+        src="/img/7.webp"
         format="webp"
         loading="lazy"
         width="654"

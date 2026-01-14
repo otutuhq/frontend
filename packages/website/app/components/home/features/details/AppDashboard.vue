@@ -8,7 +8,7 @@ const { t } = useI18n({ useScope: 'global' });
       <NuxtImg
         class="rounded-xl overflow-hidden"
         :alt="t('home.dashboard.title')"
-        src="/img/dashboard.webp"
+        src="/img/1.webp"
         format="webp"
         loading="lazy"
         width="654"

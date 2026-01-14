@@ -54,7 +54,7 @@ const features = [
       <NuxtImg
         class="rounded-xl overflow-hidden"
         :alt="t('home.evm_protocols.title')"
-        src="/img/dashboard copy.webp"
+        src="/img/6.webp"
         format="webp"
         loading="lazy"
         width="654"

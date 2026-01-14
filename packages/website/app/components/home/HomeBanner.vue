@@ -17,7 +17,8 @@ const { t } = useI18n({ useScope: 'global' });
         {{ t('home.hero.motto') }}
       </h5>
       <ButtonLink
-        to="/download"
+        to="https://calendly.com/otutu/30min"
+        external
         size="lg"
         color="primary"
         rounded
