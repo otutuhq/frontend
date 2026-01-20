@@ -20,7 +20,7 @@ const { t } = useI18n({ useScope: 'global' });
     <ButtonLink
       v-if="!onlyPremium"
       variant="outlined"
-      to="https://app.otutu.co/company/login"
+      to="https://demo.otutu.co/company/login"
       external
       size="lg"
       :color="color"

@@ -72,7 +72,7 @@ watch(
 
         <div class="flex flex-col space-y-2 px-4 md:items-center md:flex-row md:space-y-0 md:space-x-2 md:px-0">
           <a
-            href="https://app.otutu.co/company/login"
+            href="https://demo.otutu.co/company/login"
             target="_blank"
             rel="noopener noreferrer"
           >

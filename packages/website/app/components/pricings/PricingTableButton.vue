@@ -17,7 +17,7 @@ const { t } = useI18n({ useScope: 'global' });
   <ButtonLink
     v-if="isFreePlan(plan)"
     class="w-full py-2 xl:text-[1rem]"
-    to="https://app.otutu.co/company/login"
+    to="https://demo.otutu.co/company/login"
     external
     color="primary"
     variant="outlined"

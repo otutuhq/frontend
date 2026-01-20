@@ -26,6 +26,16 @@ const images = ref<string[]>([
   '/img/screenshots/8.avif',
   '/img/screenshots/9.avif',
   '/img/screenshots/10.avif',
+  '/img/screenshots/11.avif',
+  '/img/screenshots/12.avif',
+  '/img/screenshots/13.avif',
+  '/img/screenshots/14.avif',
+  '/img/screenshots/15.avif',
+  '/img/screenshots/16.avif',
+  '/img/screenshots/17.avif',
+  '/img/screenshots/18.avif',
+  '/img/screenshots/19.avif',
+  '/img/screenshots/20.avif',
 ]);
 
 function onSwiperUpdate(s: Swiper): void {

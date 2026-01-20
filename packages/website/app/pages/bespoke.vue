@@ -98,7 +98,7 @@ const services = computed(() => [
 
       <div class="rounded-xl overflow-hidden shadow-xl">
         <NuxtImg
-          src="/img/accounting.webp"
+          src="/img/2.webp"
           :alt="t('accounting.title')"
           class="w-full h-auto"
           format="webp"
