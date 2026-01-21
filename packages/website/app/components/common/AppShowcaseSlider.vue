@@ -19,7 +19,7 @@ const images = ref<string[]>([]);
 
 function scanImages(): void {
   // Generate image paths programmatically for 20 AVIF screenshots
-  const imagePaths = Array.from({ length: 20 }, (_, i) => `/img/screenshots/${i + 1}.avif`);
+  const imagePaths = Array.from({ length: 13 }, (_, i) => `/img/screenshots/${i + 1}.avif`);
   set(images, imagePaths);
 }
 
