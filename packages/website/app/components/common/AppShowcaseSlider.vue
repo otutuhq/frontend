@@ -79,8 +79,8 @@ function getLoadingStrategy(index: number): 'eager' | 'lazy' {
         />
       </SwiperSlide>
     </Carousel>
-    <div class="container relative">
-      <div class="flex flex-col md:absolute top-0 mt-4 md:mt-0 transform md:translate-y-[calc(-50%-2.5rem)] md:-left-6 md:-right-6 items-center justify-center z-[1] md:px-0 px-4">
+    <div class="container relative !px-0">
+      <div class="flex flex-col md:absolute top-0 mt-4 transform md:translate-y-[calc(-50%-2.5rem)] md:-left-6 md:-right-6 items-center justify-center z-[1]">
         <CarouselControls
           v-model:swiper="swiperInstance"
           :active-index="activeIndex"
