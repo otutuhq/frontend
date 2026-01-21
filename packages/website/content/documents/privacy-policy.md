@@ -1,9 +1,9 @@
 ---
 title: Privacy Policy
-description: Information for website visitors regarding how Otutu Group LTD collects, uses, stores, and protects Personal Information in accordance with Nigerian data protection laws.
+description: Information for website visitors regarding how Otutu Technologies LTD collects, uses, stores, and protects Personal Information in accordance with Nigerian data protection laws.
 ---
 
-Otutu Group LTD (“Otutu”, “we”, “our”, or “us”) operates the Otutu accounting and tax infrastructure platform, website, and related services (collectively referred to as the **SERVICE**).
+Otutu Technologies LTD (“Otutu”, “we”, “our”, or “us”) operates the Otutu accounting and tax infrastructure platform, website, and related services (collectively referred to as the **SERVICE**).
 
 This Privacy Policy explains how we collect, use, disclose, and safeguard Personal Information when you visit or use our Service. It is written in accordance with the **Nigeria Data Protection Act (NDPA) 2023** and applicable regulations issued by the **Nigeria Data Protection Commission (NDPC)**.
 
@@ -153,7 +153,7 @@ We encourage you to review this page periodically.
 
 If you have questions, concerns, or requests regarding this Privacy Policy or how we handle your data, please contact us:
 
-**Otutu Group LTD**
+**Otutu Technologies LTD**
 Email: info@otutu.co
 
 ---

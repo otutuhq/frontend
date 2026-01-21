@@ -44,7 +44,7 @@ useHead({
 
     // Additional SEO Tags
     { name: 'robots', content: 'noindex, nofollow' },
-    { name: 'author', content: 'Otutu Group LTD' },
+    { name: 'author', content: 'Otutu Technologies LTD' },
     { name: 'keywords', content: 'rotki, premium, subscription, payment, card payment, cryptocurrency accounting' },
 
     // Theme Color

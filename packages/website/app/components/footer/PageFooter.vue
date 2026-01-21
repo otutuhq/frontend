@@ -15,7 +15,7 @@ withDefaults(
 const { t } = useI18n({ useScope: 'global' });
 
 const year = new Date().getFullYear().toString();
-const copyright = computed<string>(() => `© Otutu Group LTD 2019-${year}.`);
+const copyright = computed<string>(() => `© Otutu Technologies LTD 2019-${year}.`);
 </script>
 
 <template>
