@@ -15,28 +15,13 @@ const swiperInstance = ref<Swiper>();
 const swiperReady = ref<boolean>(false);
 const activeIndex = ref<number>(1);
 
-const images = ref<string[]>([
-  '/img/screenshots/1.avif',
-  '/img/screenshots/2.avif',
-  '/img/screenshots/3.avif',
-  '/img/screenshots/4.avif',
-  '/img/screenshots/5.avif',
-  '/img/screenshots/6.avif',
-  '/img/screenshots/7.avif',
-  '/img/screenshots/8.avif',
-  '/img/screenshots/9.avif',
-  '/img/screenshots/10.avif',
-  '/img/screenshots/11.avif',
-  '/img/screenshots/12.avif',
-  '/img/screenshots/13.avif',
-  '/img/screenshots/14.avif',
-  '/img/screenshots/15.avif',
-  '/img/screenshots/16.avif',
-  '/img/screenshots/17.avif',
-  '/img/screenshots/18.avif',
-  '/img/screenshots/19.avif',
-  '/img/screenshots/20.avif',
-]);
+const images = ref<string[]>([]);
+
+function scanImages(): void {
+  // Generate image paths programmatically for 20 AVIF screenshots
+  const imagePaths = Array.from({ length: 20 }, (_, i) => `/img/screenshots/${i + 1}.avif`);
+  set(images, imagePaths);
+}
 
 function onSwiperUpdate(s: Swiper): void {
   set(swiperInstance, s);
@@ -50,6 +35,15 @@ function onSwiperUpdate(s: Swiper): void {
 function getLoadingStrategy(index: number): 'eager' | 'lazy' {
   return index === 0 ? 'eager' : 'lazy';
 }
+
+/**
+ * Returns fetch priority for images (first image gets high priority as it's the LCP element)
+ */
+function getFetchPriority(index: number): 'high' | 'auto' {
+  return index === 0 ? 'high' : 'auto';
+}
+
+scanImages();
 </script>
 
 <template>
@@ -71,11 +65,14 @@ function getLoadingStrategy(index: number): 'eager' | 'lazy' {
         :key="i"
         class="relative pt-[56.2%] bg-rui-grey-100"
       >
-        <img
+        <NuxtImg
           :src="image"
-          alt="Otutu application screenshot"
+          alt=" "
+          format="webp"
           :loading="getLoadingStrategy(i)"
-          class="w-full absolute h-full top-0 left-0 object-cover"
+          :fetchpriority="getFetchPriority(i)"
+          sizes="sm:100vw md:80vw lg:900px"
+          class="w-full absolute h-full top-0 left-0"
         />
       </SwiperSlide>
     </Carousel>
